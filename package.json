@@ -1,6 +1,7 @@
 {
   "private": true,
   "dependencies": {
+    "@react-navigation/native": "^6.1.17",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -8,6 +9,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
+    "scrollreveal": "^4.0.9",
     "web-vitals": "^3.0.4"
   },
   "scripts": {
