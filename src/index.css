@@ -2,6 +2,13 @@
 
 :root {
   --Anil: #004af7;
+  --GestaoDeRh-claro: #cfc8e5;
+  --GestaoDeRh-escuro: #3b3666;
+  --GestaoDeRh-gradient: radial-gradient(
+    154.34% 144.66% at -2.8% 95.49%,
+    #766ccc 11.42%,
+    #3b3666 67.99%
+  );
 }
 
 body {
@@ -14,7 +21,7 @@ body {
 .container {
   margin: auto;
   max-width: 996px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 6%;
 }
 
@@ -51,47 +58,113 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.SaudacaoFundo_imagem {
+.saudacao-container {
+  position: relative;
+  /* width: 100%; */
+  /* max-width: 375px; */
+  height: 355px;
+  border-radius: 0px 0px 12px 12px;
+  background: radial-gradient(
+    154.34% 144.66% at -2.8% 95.49%,
+    #766ccc 11.42%,
+    #3b3666 67.99%
+  );
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.imagem {
   position: absolute;
   bottom: 0;
-  top: 8%;
   left: 0;
-}
-
-.Saudacao_imagem {
-  max-width: 100%;
+  width: 35%;
   height: auto;
-}
-
-.SaudacaoFundo_texto {
-  display: flex;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-left: 45%;
-  position: absolute;
-  bottom: 0;
-  top: 8%;
-  max-width: 13rem;
-  justify-content: flex-end;
-}
-
-.SaudacaoFundo {
-  display: flex;
-  min-height: 22.1875rem;
+  max-width: 178px;
+  max-height: 282px;
   flex-shrink: 0;
-  border-radius: 0rem 0rem 0.75rem 0.75rem;
-  background: #3b3666;
-  justify-content: space-around;
 }
 
-@media (max-width: 280px) {
-  .SaudacaoFundo_imagem {
-    display: none;
-  }
+.saudacao-content {
+  padding-left: 40%;
+}
 
-  .SaudacaoFundo_texto {
-    padding: 0;
-    width: 100%;
-  }
+.content-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.nome {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cardConceito {
+  position: relative;
+  /* max-width: 20.9375rem; */
+  margin-top: -20px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.cardConceito_conteudo {
+  padding: 1.5rem 1.12rem;
+  border-radius: 12px;
+  background: #cfc8e5;
+}
+
+.cardConceito2_conteudo {
+  max-width: 11.6875rem;
+  height: 2.625rem;
+  border-radius: 0.75rem;
+  background: #3b3666;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  padding: 0.4rem 0.81rem;
+  position: relative;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.cardConceito2_conteudoTipo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardConceito2_texto {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 150.18%;
+  margin: 0;
+}
+
+.emaPosition {
+  position: relative;
+  top: -132px;
+  right: -250px;
+}
+
+.recepcao {
+  position: relative;
+  top: -60vw;
+}
+
+.ImagemInicial2 {
+  display: flex;
+  justify-content: center;
 }
