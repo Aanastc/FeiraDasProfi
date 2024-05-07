@@ -11,10 +11,15 @@
   );
 }
 
+* {
+  /* background-color: black; */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   word-break: break-word !important;
-  background-color: white;
+  /* background-color: white; */
+  background-color: black;
   margin: 0;
   padding: 0;
 }
@@ -272,4 +277,11 @@ body {
 /* Estilos para dispositivos com largura de tela de 576px a 767px (exemplo: tablets em modo paisagem) */
 @media (max-width: 767px) {
   /* Estilos específicos para dispositivos com largura de tela entre 576px e 767px */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+    color: black;
+  }
 }
