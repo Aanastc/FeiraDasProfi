@@ -21,7 +21,7 @@ body {
 
 .container {
   margin: auto;
-  max-width: 996px;
+  max-width: 23.4375rem;
   padding: 6%;
 }
 
@@ -30,15 +30,11 @@ body {
   height: auto;
 }
 
-.flexBaseline {
+/* .flexAround {
   display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-
-.flexBaseline p {
-  margin: 0;
-}
+  align-items: center;
+  justify-content: space-around;
+} */
 
 /* ****************** */
 .ButtonsCursos {
@@ -189,9 +185,12 @@ body {
   justify-content: center;
 }
 
-.FormatoFundo {
+/* ********************** */
+.FormatoFundo,
+.DepoimentosFundo {
   background: #3b3666;
   padding: 0.7rem 1.5rem;
+  margin-bottom: 1.45rem;
 }
 
 .FormatoFundo_texto {
@@ -201,9 +200,17 @@ body {
   font-weight: 400;
 }
 
+.DepoimentosFundo_texto {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* ********************** */
 .desenvolve {
-  padding-left: 6%;
+  margin-left: 6%;
+  width: 100%;
 }
 
 .desenvolveGrupo {
@@ -211,18 +218,149 @@ body {
   justify-content: space-between;
 }
 
-.imagemContainer {
+.fundo {
   position: relative;
+  background-size: cover;
 }
 
-.fundo,
 .ema {
   position: absolute;
-  top: 0;
-  left: 0;
+  right: 0;
+}
+
+.desenvolveGrupo_topicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flexBaseline {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.flexBaseline p {
+  margin: 0;
+}
+
+.flexBaseline img {
+  margin-top: 5px;
+}
+
+/* ********************** */
+.card {
+  height: 100%;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: -2px 7px 15px -6px rgba(0, 0, 0, 0.14);
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.19rem;
+}
+
+.cardTexto {
+  font-family: Poppins;
+  text-align: center;
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  max-width: 5.5rem;
+  margin: 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.45rem;
+}
+
+/* ********************** */
+.Depoimentos {
+  width: 20.9375rem;
+  min-height: 17.75rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  gap: 0.69rem;
+}
+
+.DepoimentosNome {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.DepoimentosPapel {
+  color: #a4a4a4;
+  font-family: Poppins;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin: 0;
+}
+/* ********************* */
+.sessao_buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1.25rem;
+}
+
+.botao {
+  height: 3.5625rem;
+  border-radius: 1.78125rem;
+  background: #3b3666;
+  padding: 0.4rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.botaoNome {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 /* ********************* */
+.coordenacao-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.19rem;
+}
+
+.coordenacaoNome {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.infoItem {
+  display: flex;
+  align-items: baseline;
+  gap: 0.38rem;
+}
+
+.infoTexto {
+  color: #000;
+  font-family: Poppins;
+  font-size: 0.625rem;
+  font-weight: 400;
+}
+
+/* **************** */
 @media (max-width: 280px) {
   .imagem {
     display: none;
@@ -248,6 +386,16 @@ body {
     gap: 0.5rem;
     max-width: 6.6875rem;
     height: auto;
+  }
+}
+
+@media (max-width: 305px) {
+  .imagemContainer {
+    display: none !important;
+  }
+
+  .flexBaseline {
+    margin-bottom: 0.45rem;
   }
 }
 
