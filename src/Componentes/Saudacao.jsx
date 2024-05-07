@@ -12,7 +12,7 @@ export default function Saudacao({
   ImagemInicial2,
 }) {
   return (
-    <div className="saudacao">
+    <>
       <div className="saudacao-container">
         <div className="saudacao-content">
           <img src={ImagemInicial} alt="Imagem" className="imagem" />
@@ -57,6 +57,6 @@ export default function Saudacao({
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

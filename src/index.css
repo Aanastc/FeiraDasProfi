@@ -11,15 +11,10 @@
   );
 }
 
-* {
-  /* background-color: black; */
-}
-
 body {
   font-family: "Poppins", sans-serif;
   word-break: break-word !important;
-  /* background-color: white; */
-  background-color: black;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -27,7 +22,6 @@ body {
 .container {
   margin: auto;
   max-width: 996px;
-  /* box-sizing: border-box; */
   padding: 6%;
 }
 
@@ -46,6 +40,7 @@ body {
   margin: 0;
 }
 
+/* ****************** */
 .ButtonsCursos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(157px, 1fr));
@@ -79,15 +74,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.saudacao {
-  width: fit-content;
-  min-height: 60rem;
-}
-
+/* *************** */
 .saudacao-container {
   position: relative;
   width: 100%;
-  height: 355px;
+  height: 22.1875rem;
   border-radius: 0px 0px 12px 12px;
   background: radial-gradient(
     154.34% 144.66% at -2.8% 95.49%,
@@ -112,7 +103,9 @@ body {
 }
 
 .saudacao-content {
-  padding-left: 40%;
+  /* padding-left: 40%; */
+  padding-right: 3%;
+  width: 60%;
 }
 
 .content-right {
@@ -229,7 +222,7 @@ body {
   left: 0;
 }
 
-/* Estilos para dispositivos com largura de tela até 280px (exemplo: smartphones muito pequenos) */
+/* ********************* */
 @media (max-width: 280px) {
   .imagem {
     display: none;
@@ -237,6 +230,7 @@ body {
 
   .saudacao-content {
     padding-left: 6%;
+    width: 100%;
   }
 
   .recepcao {
@@ -257,7 +251,6 @@ body {
   }
 }
 
-/* Estilos para dispositivos com largura de tela de 281px a 375px (exemplo: smartphones padrão) */
 @media (max-width: 375px) {
   .emaPosition {
     top: -95px;
@@ -269,17 +262,10 @@ body {
   }
 }
 
-/* Estilos para dispositivos com largura de tela de 376px a 575px (exemplo: smartphones maiores ou tablets em modo retrato) */
 @media (max-width: 575px) {
-  /* Estilos específicos para dispositivos com largura de tela entre 376px e 575px */
 }
 
-/* Estilos para dispositivos com largura de tela de 576px a 767px (exemplo: tablets em modo paisagem) */
-@media (max-width: 767px) {
-  /* Estilos específicos para dispositivos com largura de tela entre 576px e 767px */
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) and (prefers-color-scheme: light) {
   body {
     background-color: white;
     color: black;

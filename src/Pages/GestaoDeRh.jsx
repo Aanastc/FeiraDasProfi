@@ -16,7 +16,7 @@ export default function GestaoDeRh() {
         ImagemInicial2={ImagemSaudacao2}
       />
       <Formato ImagemFormato={ImagemFormato} />
-      <Desenvolve texto1="Gestão de talentos" />
+      {/* <Desenvolve texto1="Gestão de talentos" /> */}
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam
         voluptates nihil corporis sed repellendus et mollitia rem suscipit
