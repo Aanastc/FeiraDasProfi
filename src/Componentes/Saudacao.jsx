@@ -12,7 +12,7 @@ export default function Saudacao({
   ImagemInicial2,
 }) {
   return (
-    <>
+    <div className="saudacao">
       <div className="saudacao-container">
         <div className="saudacao-content">
           <img src={ImagemInicial} alt="Imagem" className="imagem" />
@@ -53,10 +53,10 @@ export default function Saudacao({
             extensionista.
           </p>
           <div className="ImagemInicial2">
-            <img src={ImagemInicial2} alt="" />
+            <img src={ImagemInicial2} alt="" className="img-fluid" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

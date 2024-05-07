@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   word-break: break-word !important;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +24,21 @@ body {
   max-width: 996px;
   /* box-sizing: border-box; */
   padding: 6%;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.flexBaseline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.flexBaseline p {
+  margin: 0;
 }
 
 .ButtonsCursos {
@@ -58,10 +74,14 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.saudacao {
+  width: fit-content;
+  min-height: 60rem;
+}
+
 .saudacao-container {
   position: relative;
-  /* width: 100%; */
-  /* max-width: 375px; */
+  width: 100%;
   height: 355px;
   border-radius: 0px 0px 12px 12px;
   background: radial-gradient(
@@ -112,10 +132,10 @@ body {
 
 .cardConceito {
   position: relative;
-  /* max-width: 20.9375rem; */
   margin-top: -20px;
   padding-left: 6%;
   padding-right: 6%;
+  min-height: 60rem;
 }
 
 .cardConceito_conteudo {
@@ -155,8 +175,10 @@ body {
 
 .emaPosition {
   position: relative;
-  top: -132px;
-  right: -250px;
+  display: flex;
+  justify-content: end;
+  top: -80px;
+  right: -7%;
 }
 
 .recepcao {
@@ -167,4 +189,87 @@ body {
 .ImagemInicial2 {
   display: flex;
   justify-content: center;
+}
+
+.FormatoFundo {
+  background: #3b3666;
+  padding: 0.7rem 1.5rem;
+}
+
+.FormatoFundo_texto {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* ********************** */
+.desenvolve {
+  padding-left: 6%;
+}
+
+.desenvolveGrupo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagemContainer {
+  position: relative;
+}
+
+.fundo,
+.ema {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Estilos para dispositivos com largura de tela até 280px (exemplo: smartphones muito pequenos) */
+@media (max-width: 280px) {
+  .imagem {
+    display: none;
+  }
+
+  .saudacao-content {
+    padding-left: 6%;
+  }
+
+  .recepcao {
+    position: relative;
+    top: -90vw !important;
+  }
+
+  .recepcao h1 {
+    width: 130px;
+  }
+
+  .cardConceito2_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 6.6875rem;
+    height: auto;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela de 281px a 375px (exemplo: smartphones padrão) */
+@media (max-width: 375px) {
+  .emaPosition {
+    top: -95px;
+  }
+
+  .recepcao {
+    position: relative;
+    top: -70vw;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela de 376px a 575px (exemplo: smartphones maiores ou tablets em modo retrato) */
+@media (max-width: 575px) {
+  /* Estilos específicos para dispositivos com largura de tela entre 376px e 575px */
+}
+
+/* Estilos para dispositivos com largura de tela de 576px a 767px (exemplo: tablets em modo paisagem) */
+@media (max-width: 767px) {
+  /* Estilos específicos para dispositivos com largura de tela entre 576px e 767px */
 }
