@@ -6,6 +6,7 @@ import ComoFunciona from "../Componentes/ComoFunciona";
 import Depoimentos from "../Componentes/Depoimentos";
 import SessaoButtons from "../Componentes/SessaoButtons";
 import Coordenacao from "../Componentes/Coordenacao";
+import Finalizacao from "../Componentes/Finalizacao";
 
 import ImagemSaudacao from "../assets/imgs/GestaoDeRh.png";
 import Coordenador from "../assets/imgs/GestaoDeRhCoordenador.png";
@@ -85,6 +86,7 @@ export default function GestaoDeRh() {
           bloco="Bloco Q | Sala 03"
         />
       </div>
+      <Finalizacao />
     </>
   );
 }

@@ -14,6 +14,7 @@ export default function Saudacao({
   tempo,
   ImagemInicial2,
 }) {
+  const [topPosition, setTopPosition] = useState(0);
   const [fontSize, setFontSize] = useState(24);
 
   useEffect(() => {
@@ -23,10 +24,42 @@ export default function Saudacao({
       setFontSize(newFontSize);
     };
 
-    window.addEventListener("resize", calculateFontSize);
+    const calculateTopPosition = () => {
+      const cardConceitoConteudo = document.querySelector(
+        ".cardConceito_conteudo"
+      );
+      if (cardConceitoConteudo) {
+        const cardHeight = cardConceitoConteudo.clientHeight;
+        let topPercentage = 230;
 
-    return () => window.removeEventListener("resize", calculateFontSize);
+        if (window.innerWidth >= 376) {
+          topPercentage = 255;
+        }
+
+        if (window.innerWidth >= 426) {
+          topPercentage = 320;
+        }
+
+        const newTopPosition = (cardHeight * topPercentage) / 100;
+        setTopPosition(newTopPosition);
+      }
+    };
+
+    const handleResize = () => {
+      calculateFontSize();
+      calculateTopPosition();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    calculateFontSize();
+    calculateTopPosition();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
   return (
     <div>
       <div className="fundoSaudacao">
@@ -47,7 +80,7 @@ export default function Saudacao({
           <div className="cardConceito_conteudo">
             <p className="cardConceito_conteudoTexto">{conceito}</p>
           </div>
-          <div className="emaPosition">
+          <div className="emaPosition" style={{ top: topPosition }}>
             <img src={Ema} alt="" />
           </div>
         </div>

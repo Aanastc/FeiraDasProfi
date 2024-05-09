@@ -71,7 +71,7 @@ a:hover {
 
 /* *************** */
 .fundoSaudacao {
-  height: 22.1875rem;
+  height: 18.1875rem;
   border-radius: 0px 0px 12px 12px;
   background: radial-gradient(
     154.34% 144.66% at -2.8% 95.49%,
@@ -80,7 +80,6 @@ a:hover {
   );
   display: flex;
   align-items: end;
-  position: static;
 }
 
 .content-texto {
@@ -137,7 +136,6 @@ a:hover {
 
 .emaPosition {
   position: absolute;
-  bottom: -5%;
   right: 0;
   z-index: 999;
 }
@@ -383,6 +381,18 @@ a:hover {
   font-size: 0.7rem;
   font-weight: 400;
   margin: 0.5rem 0 0 0;
+}
+/* **************** */
+.FinalizacaoFundo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--GestaoDeRh-escuro);
+  width: 100%;
+  height: 4.9375rem;
+}
+
+.FinalizacaoFundo img {
+  width: 200px;
 }
 
 /* **************** */
