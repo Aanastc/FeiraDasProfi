@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../assets/icons/logo.svg";
 import Ema from "../assets/icons/Ema_1.svg";
 import Duracao from "../assets/icons/tempo.svg";
@@ -14,28 +14,44 @@ export default function Saudacao({
   tempo,
   ImagemInicial2,
 }) {
+  const [fontSize, setFontSize] = useState(24);
+
+  useEffect(() => {
+    const calculateFontSize = () => {
+      const screenWidth = window.innerWidth;
+      const newFontSize = Math.max(10, screenWidth / 20);
+      setFontSize(newFontSize);
+    };
+
+    window.addEventListener("resize", calculateFontSize);
+
+    return () => window.removeEventListener("resize", calculateFontSize);
+  }, []);
   return (
-    <div className="teste">
-      <div className="saudacao-container">
-        <div className="saudacao-content">
-          <img src={ImagemInicial} alt="Imagem" className="imagem" />
-          <div className="content-right">
-            <img src={Logo} alt="Logo" className="logo" />
-            <div>
-              <p className="nome">
-                {TextoInicio}
-                <strong>{curso}</strong>
-                {textoFim}
-              </p>
-            </div>
+    <div>
+      <div className="fundoSaudacao">
+        <img src={ImagemInicial} alt="Imagem" className="imagem" />
+        <div className="content-texto">
+          <img src={Logo} alt="Logo" className="logo" />
+          <div>
+            <p className="nome" style={{ fontSize: `${fontSize}px` }}>
+              {TextoInicio}
+              <strong>{curso}</strong>
+              {textoFim}
+            </p>
           </div>
         </div>
       </div>
       <div class="cardConceito">
-        <div className="cardConceito_conteudo">
-          <p className="cardConceito_conteudoTexto">{conceito}</p>
+        <div>
+          <div className="cardConceito_conteudo">
+            <p className="cardConceito_conteudoTexto">{conceito}</p>
+          </div>
+          <div className="emaPosition">
+            <img src={Ema} alt="" />
+          </div>
         </div>
-        <div className="cardConceito2_conteudo">
+        <div className="cardConceito2_fundo">
           <div className="cardConceito2_conteudoTipo">
             <img src={Duracao} alt="" />
             <p className="cardConceito2_texto">{tempo}</p>
@@ -45,11 +61,8 @@ export default function Saudacao({
             <p className="cardConceito2_texto">Avaliações Presenciais</p>
           </div>
         </div>
-        <div className="emaPosition">
-          <img src={Ema} alt="" />
-        </div>
       </div>
-      <div className="recepcao container">
+      <div className="recepcao">
         <h3 className="recepcaoTitulo">Boas-vindas!</h3>
         <p>
           Nossos cursos dispõem de uma plataforma educacional personalizada, com
