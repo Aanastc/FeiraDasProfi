@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 // cursos:
@@ -13,6 +13,16 @@ import Logistica from "./Pages/Adm";
 import IntNegocios from "./Pages/IntNegocios";
 
 const App = () => {
+  useEffect(() => {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      document.body.style.backgroundColor = "white";
+      document.body.style.color = "black";
+    }
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

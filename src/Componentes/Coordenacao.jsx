@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+
 import emailIcone from "../assets/icons/email.svg";
 import telefoneIcone from "../assets/icons/telefone.svg";
 import blocoIcone from "../assets/icons/bloco.svg";
@@ -10,6 +12,19 @@ export default function Coordenacao({
   telefone,
   bloco,
 }) {
+  useEffect(() => {
+    const infoItem = document.querySelectorAll(".infoItem");
+
+    infoItem.forEach((element, index) => {
+      ScrollReveal().reveal(element, {
+        delay: 300 * index,
+        distance: "20px",
+        easing: "ease-in-out",
+        interval: 150,
+        origin: "right",
+      });
+    });
+  }, []);
   return (
     <div className="coordenacao">
       <h2>Contato Coordenação</h2>

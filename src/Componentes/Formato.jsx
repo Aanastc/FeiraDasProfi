@@ -7,7 +7,7 @@ export default function Formato({ ImagemFormato }) {
         formato 1 ou pelo formato 2, dependendo do período que você ingressar.
       </p>
       <div className="ImagemInicial2">
-        <img src={ImagemFormato} alt="" />
+        <img src={ImagemFormato} alt="" className="img-fluid" />
       </div>
     </div>
   );

@@ -4,10 +4,13 @@ import Formato from "../Componentes/Formato";
 import Desenvolve from "../Componentes/Desenvolve";
 import ComoFunciona from "../Componentes/ComoFunciona";
 import Depoimentos from "../Componentes/Depoimentos";
+import SessaoButtons from "../Componentes/SessaoButtons";
 import Coordenacao from "../Componentes/Coordenacao";
 
 import ImagemSaudacao from "../assets/imgs/GestaoDeRh.png";
 import Coordenador from "../assets/imgs/GestaoDeRhCoordenador.png";
+import matrizCurricular from "../assets/pdfs/Placeholder-PDF.pdf";
+import linkDoPdf from "../assets/pdfs/Placeholder-PDF.pdf";
 
 import Avaliacao from "../assets/imgs/GestaoDeRhGrafico.svg";
 import porque from "../assets/imgs/GestaoDeRhGraficoCelular.svg";
@@ -32,7 +35,14 @@ const depoimentosData = [
     nome: "Vitor Andrade",
     papel: "Aluno EAD Unifor",
     texto:
-      "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.” ",
+      "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
+  },
+  {
+    imageSrc: hans,
+    nome: "Mara Núbia Angelim",
+    papel: "Aluno EAD Unifor",
+    texto:
+      "“Apesar de ser um curso a distância, sinto-me plenamente conectada à comunidade acadêmica. Tenho contato regular com outros alunos por meio de fóruns de discussão, grupos de estudo e atividades propostas pelos professores.”",
   },
 ];
 
@@ -40,12 +50,15 @@ export default function GestaoDeRh() {
   return (
     <>
       <Saudacao
-        Nome="Gestão De RH"
+        TextoInicio="Torne-se um profissional de "
+        curso="Gestão De RH "
+        textoFim="com nosso curso EaD."
         ImagemInicial={ImagemSaudacao}
         conceito="Desenvolva competências técnico-científicas e socioemocionais, aptidões para gerenciar talentos e promover ambientes saudáveis em um mercado em constante transformação tecnológica. "
         tempo="2 anos"
         ImagemInicial2={ImagemSaudacao2}
       />
+
       <Formato ImagemFormato={ImagemFormato} />
       <Desenvolve
         texto1="Gestão de talentos"
@@ -60,20 +73,10 @@ export default function GestaoDeRh() {
       />
       <Depoimentos depoimentosData={depoimentosData} />
       <div className="container">
-        <div className="sessao_buttons">
-          <a href="" target="_blank" className="botao">
-            <div>
-              <img src={matriz} alt="" />
-            </div>
-            <p className="botaoNome">Matriz Curricular</p>
-          </a>
-          <a href="" target="_blank" className="botao">
-            <div>
-              <img src={pdf} alt="" />
-            </div>
-            <p className="botaoNome">Baixar PDF</p>
-          </a>
-        </div>
+        <SessaoButtons
+          matrizCurricular={matrizCurricular}
+          linkDoPdf={linkDoPdf}
+        />
         <Coordenacao
           imagemSrc={Coordenador}
           nome="Prof. Dr. Josimar Souza Costa"

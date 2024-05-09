@@ -16,7 +16,7 @@ function Card({ imageSrc, title }) {
 
 export default function ComoFunciona({ Encontros, Avaliacao, porque }) {
   return (
-    <div className="ComoFunciona container">
+    <div className="container">
       <h2>Como funciona... </h2>
       <p>
         Cada Percurso representa o conteúdo da disciplina, onde será estruturado
