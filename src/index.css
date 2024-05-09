@@ -145,7 +145,7 @@ a:hover {
   font-family: Poppins;
   font-size: 0.875rem;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0.2rem 0.5rem 0;
 }
 
 .cardConceito2_fundo {
@@ -192,10 +192,11 @@ a:hover {
   margin-bottom: 1.75rem;
 }
 
-.recepcao {
+.recepcao,
+.ComoFunciona {
   padding: 0 6%;
   margin: auto;
-  background-color: transparent;
+  overflow: hidden;
 }
 
 /* ********************** */
@@ -244,6 +245,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 0.8rem;
 }
 
 .flexBaseline {
@@ -288,7 +290,7 @@ a:hover {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 20px;
+  grid-gap: 0.563rem;
   margin-bottom: 1.45rem;
   align-items: center;
   justify-content: center;

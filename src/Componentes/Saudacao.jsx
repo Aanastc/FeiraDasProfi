@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 import Logo from "../assets/icons/logo.svg";
 import Ema from "../assets/icons/Ema_1.svg";
 import Duracao from "../assets/icons/tempo.svg";
 import Avaliacao from "../assets/icons/avaliacao.svg";
 
 export default function Saudacao({
-  Nome,
   ImagemInicial,
   curso,
   TextoInicio,
@@ -20,7 +20,12 @@ export default function Saudacao({
   useEffect(() => {
     const calculateFontSize = () => {
       const screenWidth = window.innerWidth;
-      const newFontSize = Math.max(10, screenWidth / 20);
+      const minFontSize = 18;
+      const maxFontSize = 24;
+      const newFontSize = Math.min(
+        maxFontSize,
+        Math.max(minFontSize, screenWidth / 20)
+      );
       setFontSize(newFontSize);
     };
 
@@ -34,6 +39,10 @@ export default function Saudacao({
 
         if (window.innerWidth >= 376) {
           topPercentage = 255;
+        }
+
+        if (window.innerWidth >= 426) {
+          topPercentage = 320;
         }
 
         if (window.innerWidth >= 426) {
@@ -60,11 +69,31 @@ export default function Saudacao({
     };
   }, []);
 
+  useEffect(() => {
+    const revealConfig = {
+      delay: 300,
+      distance: "20px",
+      easing: "ease-in-out",
+      interval: 150,
+    };
+
+    ScrollReveal().reveal(".revealBottom", {
+      ...revealConfig,
+      origin: "bottom",
+    });
+    ScrollReveal().reveal(".revealTop", { ...revealConfig, origin: "top" });
+    ScrollReveal().reveal(".revealLeft", { ...revealConfig, origin: "left" });
+    ScrollReveal().reveal(".revealRight", {
+      ...revealConfig,
+      origin: "right",
+    });
+  }, []);
+
   return (
     <div>
       <div className="fundoSaudacao">
-        <img src={ImagemInicial} alt="Imagem" className="imagem" />
-        <div className="content-texto">
+        <img src={ImagemInicial} alt="Imagem" className="imagem revealTop" />
+        <div className="content-texto revealRight">
           <img src={Logo} alt="Logo" className="logo" />
           <div>
             <p className="nome" style={{ fontSize: `${fontSize}px` }}>
@@ -85,25 +114,25 @@ export default function Saudacao({
           </div>
         </div>
         <div className="cardConceito2_fundo">
-          <div className="cardConceito2_conteudoTipo">
+          <div className="cardConceito2_conteudoTipo revealBottom">
             <img src={Duracao} alt="" />
             <p className="cardConceito2_texto">{tempo}</p>
           </div>
-          <div className="cardConceito2_conteudoTipo">
+          <div className="cardConceito2_conteudoTipo revealBottom">
             <img src={Avaliacao} alt="" />
             <p className="cardConceito2_texto">Avaliações Presenciais</p>
           </div>
         </div>
       </div>
       <div className="recepcao">
-        <h3 className="recepcaoTitulo">Boas-vindas!</h3>
-        <p>
+        <h3 className="recepcaoTitulo revealLeft">Boas-vindas!</h3>
+        <p className="revealLeft">
           Nossos cursos dispõem de uma plataforma educacional personalizada, com
           conteúdo ofertado em diversas mídias. As disciplinas dos cursos EAD
           são teóricas e vivenciais, podendo ser de natureza prática ou
           extensionista.
         </p>
-        <div className="ImagemInicial2">
+        <div className="ImagemInicial2 revealBottom">
           <img src={ImagemInicial2} alt="" className="img-fluid" />
         </div>
       </div>
