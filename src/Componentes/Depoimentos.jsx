@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Estrelas from "../assets/icons/Estrelas.svg";
 
-export default function Depoimentos({ depoimentosData }) {
+import hans from "../assets/imgs/hans.png";
+
+export default function Depoimentos({ backgroundEscuro }) {
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -103,8 +105,36 @@ export default function Depoimentos({ depoimentosData }) {
     };
   }, []);
 
+  const depoimentosData = [
+    {
+      imageSrc: hans,
+      nome: "Hansmuller Oliveira",
+      papel: "Aluno EAD Unifor",
+      texto:
+        "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
+    },
+    {
+      imageSrc: hans,
+      nome: "Vitor Andrade",
+      papel: "Aluno EAD Unifor",
+      texto:
+        "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
+    },
+    {
+      imageSrc: hans,
+      nome: "Mara Núbia Angelim",
+      papel: "Aluno EAD Unifor",
+      texto:
+        "“Apesar de ser um curso a distância, sinto-me plenamente conectada à comunidade acadêmica. Tenho contato regular com outros alunos por meio de fóruns de discussão, grupos de estudo e atividades propostas pelos professores.”",
+    },
+  ];
+
   return (
-    <div className="DepoimentosFundo" ref={sliderRef}>
+    <div
+      className="DepoimentosFundo"
+      ref={sliderRef}
+      style={{ background: backgroundEscuro }}
+    >
       <h2 className="DepoimentosFundo_texto">Depoimentos</h2>
       <div className="slider-wrapper">
         <button className="slide-button" id="prev-slide"></button>
@@ -114,11 +144,15 @@ export default function Depoimentos({ depoimentosData }) {
               <div>
                 <img src={depoimento.imageSrc} alt="" />
               </div>
-              <div>
-                <p className="DepoimentosNome">{depoimento.nome}</p>
-                <p className="DepoimentosPapel">{depoimento.papel}</p>
-                <p>{depoimento.texto}</p>
-                <img src={Estrelas} alt="" />
+              <div className="Divdepoimento">
+                <div>
+                  <p className="DepoimentosNome">{depoimento.nome}</p>
+                  <p className="DepoimentosPapel">{depoimento.papel}</p>
+                  <p className="DepoimentosTexto">{depoimento.texto}</p>
+                </div>
+                <div>
+                  <img src={Estrelas} alt="" />
+                </div>
               </div>
             </div>
           ))}

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
-export default function Formato({ ImagemFormato }) {
+export default function Formato({ ImagemFormato, backgroundEscuro }) {
   useEffect(() => {
     const revealConfig = {
       delay: 300,
@@ -17,7 +17,7 @@ export default function Formato({ ImagemFormato }) {
     });
   }, []);
   return (
-    <div className="FormatoFundo">
+    <div className="FormatoFundo" style={{ background: backgroundEscuro }}>
       <p className="FormatoFundo_texto revealLeft">
         Ao longo do curso, cada semestre - dividido em 2 trimestres - pode
         variar em 2 formatos, dependendo do seu curso. Você pode iniciar pelo

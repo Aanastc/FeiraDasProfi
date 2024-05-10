@@ -1,114 +1,160 @@
-import React, { useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../Componentes/Button";
-import AdsCapa from "../assets/imgs/AdsCapa.png";
-import ContabeisCapa from "../assets/imgs/ContabeisCapa.png";
-import GesComercialCapa from "../assets/imgs/GesComercialCapa.png";
-import Logisticacapa from "../assets/imgs/Logisticacapa.png";
-import GesFinanceira from "../assets/imgs/GesFinanceiraCapa.png";
-import AdmCapa from "../assets/imgs/AdmCapa.png";
-import MarketingCapa from "../assets/imgs/MarketingCapa.png";
-import IntNegociosCapa from "../assets/imgs/IntNegociosCapa.png";
 
-export default function Home() {
-  useEffect(() => {
-    const revealConfig = {
-      delay: 300,
-      distance: "50px",
-      easing: "ease-in-out",
-      interval: 150,
-    };
+import SetaAcessar from "../assets/imgs/CapasHome/SetaAcessar.png";
+import Fundo from "../assets/imgs/CapasHome/Fundo.png";
+import ImagemHome from "../assets/imgs/CapasHome/ImagemHome.png";
+import Linha from "../assets/imgs/CapasHome/Linhasvg.svg";
+import Logo from "../assets/imgs/CapasHome/LogoAzul.png";
 
-    ScrollReveal().reveal(".revealBottom", {
-      ...revealConfig,
-      origin: "bottom",
-    });
-    ScrollReveal().reveal(".revealTop", { ...revealConfig, origin: "top" });
-    ScrollReveal().reveal(".revealLeft", { ...revealConfig, origin: "left" });
-    ScrollReveal().reveal(".revealRight", {
-      ...revealConfig,
-      origin: "right",
-    });
-  }, []);
+import Adm from "../assets/imgs/CapasHome/Adm.png";
+import Ads from "../assets/imgs/CapasHome/Ads.png";
+import Comercial from "../assets/imgs/CapasHome/Comercial.png";
+import Contabeis from "../assets/imgs/CapasHome/Contabeis.png";
+import Logistica from "../assets/imgs/CapasHome/Logistica.png";
+import Financeira from "../assets/imgs/CapasHome/Financeiro.png";
+import Marketing from "../assets/imgs/CapasHome/Marketing.png";
+import Negocios from "../assets/imgs/CapasHome/Negocios.png";
+import Artificial from "../assets/imgs/CapasHome/Artificial.png";
+import Rh from "../assets/imgs/CapasHome/Rh.png";
 
+export default function Cursos() {
   const navigate = useNavigate();
 
   function irParaADs() {
-    navigate("Ads");
+    navigate("/Ads");
   }
 
   function irParaAdm() {
-    navigate("Adm");
+    navigate("/Adm");
   }
 
   function irParaContabeis() {
-    navigate("Contabeis");
+    navigate("/Contabeis");
   }
 
-  function irParaGesComercialh() {
-    navigate("GesComercialh");
+  function irParaGesComercial() {
+    navigate("/GesComercial");
   }
 
   function irParaGesFinanceira() {
-    navigate("GesFinanceira");
+    navigate("/GesFinanceira");
   }
 
   function irParaGestaoDeRh() {
-    navigate("GestaoDeRh");
+    navigate("/GestaoDeRh");
   }
 
   function irParaMarketing() {
-    navigate("Marketing");
+    navigate("/Marketing");
   }
 
   function irParaLogistica() {
-    navigate("Logistica");
+    navigate("/Logistica");
   }
 
   function irParaIntNegocios() {
-    navigate("IntNegocios");
+    navigate("/IntNegocios");
   }
 
+  function irParaIntArtificial() {
+    navigate("/IntArtificial");
+  }
+
+  const ccg = [
+    {
+      capa: Adm,
+      onClick: irParaAdm,
+      nome: "Administração",
+    },
+    {
+      capa: Comercial,
+      onClick: irParaGesComercial,
+      nome: "Gestão Comercial",
+    },
+    {
+      capa: Contabeis,
+      onClick: irParaContabeis,
+      nome: "Ciências Contábeis",
+    },
+    {
+      capa: Logistica,
+      onClick: irParaLogistica,
+      nome: "Logística",
+    },
+    {
+      capa: Financeira,
+      onClick: irParaGesFinanceira,
+      nome: "Gestão Financeira",
+    },
+    {
+      capa: Marketing,
+      onClick: irParaMarketing,
+      nome: "Marketing Digital",
+    },
+    {
+      capa: Negocios,
+      onClick: irParaIntNegocios,
+      nome: "Inteligência de Negócios",
+    },
+    {
+      capa: Rh,
+      onClick: irParaGestaoDeRh,
+      nome: "Gestão de RH",
+    },
+  ];
+
+  const cct = [
+    {
+      capa: Ads,
+      onClick: irParaADs,
+      nome: "Análise e Desenvolvimento de Sistemas",
+    },
+    {
+      capa: Artificial,
+      onClick: irParaIntArtificial,
+      nome: "Inteligência Artificial",
+    },
+  ];
+
   return (
-    <div className="container ButtonsCursos">
-      <Button
-        imagem={AdsCapa}
-        onClick={irParaADs}
-        nome="Análise e Desenvolvimento de Sistemas"
-      />
-      <Button
-        imagem={ContabeisCapa}
-        onClick={irParaContabeis}
-        nome="Ciências Contábeis"
-      />
-      <Button
-        imagem={GesComercialCapa}
-        onClick={irParaGesComercialh}
-        nome="Gestão Comercial"
-      />
-      <Button
-        imagem={Logisticacapa}
-        onClick={irParaLogistica}
-        nome="Logística"
-      />
-      <Button
-        imagem={GesFinanceira}
-        onClick={irParaGesFinanceira}
-        nome="Gestão Financeira"
-      />
-      <Button imagem={AdmCapa} onClick={irParaAdm} nome="Administração" />
-      <Button
-        imagem={MarketingCapa}
-        onClick={irParaMarketing}
-        nome="Marketing Digital"
-      />
-      <Button
-        imagem={IntNegociosCapa}
-        onClick={irParaIntNegocios}
-        nome="Inteligência de Negócios"
-      />
-      <Button onClick={irParaGestaoDeRh} nome="Gestão de RH" />
+    <div className="containerHome" style={{ backgroundImage: `url(${Fundo})` }}>
+      <div className="CursoImagemHome">
+        <img src={ImagemHome} alt="" className="img-fluid" />
+      </div>
+      <div className="CursoCentros">
+        <h2 className="">Cursos de Comunicação e Gestão</h2>
+        <img src={Linha} alt="" className="Linha" />
+      </div>
+      <div className="ButtonsCursosHome">
+        {ccg.map((curso, index) => (
+          <button className="CursoHome" key={index} onClick={curso.onClick}>
+            <div className="CursoHomeInfos">
+              <img src={curso.capa} alt={`Capa do curso ${curso.nome}`} />
+              <p className="CursoNomeHome">{curso.nome}</p>
+            </div>
+            <img src={SetaAcessar} alt="Seta para acessar o curso" />
+          </button>
+        ))}
+      </div>
+      <div className="CursoCentros">
+        <h2 className="">Cursos de Tecnologia</h2>
+        <img src={Linha} alt="" className="Linha" />
+      </div>
+      <div className="ButtonsCursosHome">
+        {cct.map((curso, index) => (
+          <button className="CursoHome" key={index} onClick={curso.onClick}>
+            <div className="CursoHomeInfos">
+              <img src={curso.capa} alt={`Capa do curso ${curso.nome}`} />
+              <p className="CursoNomeHome">{curso.nome}</p>
+            </div>
+            <img src={SetaAcessar} alt="Seta para acessar o curso" />
+          </button>
+        ))}
+      </div>
+      <div className="FinalizacaoFundo">
+        <img src={Logo} alt="Logo da empresa" />
+      </div>
     </div>
   );
 }

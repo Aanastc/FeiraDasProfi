@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Logo from "../assets/icons/logo.svg";
+import Logo from "../assets/imgs/LogoBranca.png";
 import Ema from "../assets/icons/Ema_1.svg";
-import Duracao from "../assets/icons/tempo.svg";
-import Avaliacao from "../assets/icons/avaliacao.svg";
 
 export default function Saudacao({
   ImagemInicial,
@@ -12,7 +10,12 @@ export default function Saudacao({
   conceito,
   textoFim,
   tempo,
+  tempoIcone,
   ImagemInicial2,
+  AvaliacaoIcone,
+  gradient,
+  backgroundClaro,
+  backgroundEscuro,
 }) {
   const [topPosition, setTopPosition] = useState(0);
   const [fontSize, setFontSize] = useState(24);
@@ -91,7 +94,7 @@ export default function Saudacao({
 
   return (
     <div>
-      <div className="fundoSaudacao">
+      <div className="fundoSaudacao" style={{ background: gradient }}>
         <img src={ImagemInicial} alt="Imagem" className="imagem revealTop" />
         <div className="content-texto revealRight">
           <img src={Logo} alt="Logo" className="logo" />
@@ -106,20 +109,26 @@ export default function Saudacao({
       </div>
       <div class="cardConceito">
         <div>
-          <div className="cardConceito_conteudo">
+          <div
+            className="cardConceito_conteudo"
+            style={{ background: backgroundClaro }}
+          >
             <p className="cardConceito_conteudoTexto">{conceito}</p>
           </div>
           <div className="emaPosition" style={{ top: topPosition }}>
             <img src={Ema} alt="" />
           </div>
         </div>
-        <div className="cardConceito2_fundo">
+        <div
+          className="cardConceito2_fundo"
+          style={{ background: backgroundEscuro }}
+        >
           <div className="cardConceito2_conteudoTipo revealBottom">
-            <img src={Duracao} alt="" />
+            <img src={tempoIcone} alt="" />
             <p className="cardConceito2_texto">{tempo}</p>
           </div>
           <div className="cardConceito2_conteudoTipo revealBottom">
-            <img src={Avaliacao} alt="" />
+            <img src={AvaliacaoIcone} alt="" />
             <p className="cardConceito2_texto">Avaliações Presenciais</p>
           </div>
         </div>

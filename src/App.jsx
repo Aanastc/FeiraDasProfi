@@ -9,7 +9,7 @@ import GesComercial from "./Pages/GesComercial";
 import GesFinanceira from "./Pages/GesFinanceira";
 import GestaoDeRh from "./Pages/GestaoDeRh";
 import Marketing from "./Pages/Marketing";
-import Logistica from "./Pages/Adm";
+import Logistica from "./Pages/Logistica";
 import IntNegocios from "./Pages/IntNegocios";
 
 const App = () => {

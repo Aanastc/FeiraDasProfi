@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Saudacao from "../Componentes/Saudacao";
 import Formato from "../Componentes/Formato";
 import Desenvolve from "../Componentes/Desenvolve";
@@ -6,48 +7,30 @@ import ComoFunciona from "../Componentes/ComoFunciona";
 import Depoimentos from "../Componentes/Depoimentos";
 import SessaoButtons from "../Componentes/SessaoButtons";
 import Coordenacao from "../Componentes/Coordenacao";
+import Cursos from "../Componentes/Cursos";
 import Finalizacao from "../Componentes/Finalizacao";
 
-import ImagemSaudacao from "../assets/imgs/GestaoDeRh.png";
-import Coordenador from "../assets/imgs/GestaoDeRhCoordenador.png";
+// imagens
+import ImagemSaudacao from "../assets/imgs/GestaoDeRh/GestaoDeRh.png";
+import Duracao from "../assets/imgs/GestaoDeRh/tempo.png";
+import Avaliacao from "../assets/imgs/GestaoDeRh/avaliacao.png";
+import saudacaoImagem from "../assets/imgs/GestaoDeRh/saudacaoImagem.png";
+import FormatoPng from "../assets/imgs/GestaoDeRh/Formato.png";
+import Encontros from "../assets/imgs/GestaoDeRh/Encontros.png";
+import processoAvaliativo from "../assets/imgs/GestaoDeRh/processoAvaliativo.png";
+import Escolha from "../assets/imgs/GestaoDeRh/escolha.png";
+import Coordenador from "../assets/imgs/GestaoDeRh/GestaoDeRhCoordenador.png";
+
 import matrizCurricular from "../assets/pdfs/Placeholder-PDF.pdf";
 import linkDoPdf from "../assets/pdfs/Placeholder-PDF.pdf";
 
-import Avaliacao from "../assets/imgs/GestaoDeRhGrafico.svg";
-import porque from "../assets/imgs/GestaoDeRhGraficoCelular.svg";
-import Encontros from "../assets/imgs/GestaoDeRhEncontros.svg";
-import ImagemSaudacao2 from "../assets/imgs/GestaoDeRhVindas.svg";
-import ImagemFormato from "../assets/imgs/GestaoDeRhFormato.svg";
-import matriz from "../assets/icons/matriz.svg";
-import pdf from "../assets/icons/pdf.svg";
-
-import hans from "../assets/imgs/hans.png";
-
-const depoimentosData = [
-  {
-    imageSrc: hans,
-    nome: "Hansmuller Oliveira",
-    papel: "Aluno EAD Unifor",
-    texto:
-      "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
-  },
-  {
-    imageSrc: hans,
-    nome: "Vitor Andrade",
-    papel: "Aluno EAD Unifor",
-    texto:
-      "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
-  },
-  {
-    imageSrc: hans,
-    nome: "Mara Núbia Angelim",
-    papel: "Aluno EAD Unifor",
-    texto:
-      "“Apesar de ser um curso a distância, sinto-me plenamente conectada à comunidade acadêmica. Tenho contato regular com outros alunos por meio de fóruns de discussão, grupos de estudo e atividades propostas pelos professores.”",
-  },
-];
-
 export default function GestaoDeRh() {
+  const [gradient, setGradient] = useState(
+    "radial-gradient(154.34% 144.66% at -2.8% 95.49%, #766ccc 11.42%, #3b3666 67.99%)"
+  );
+  const [backgroundClaro, setbackgroundClaro] = useState("#cfc8e5");
+  const [backgroundEscuro, setbackgroundEscuro] = useState("#3b3666");
+
   return (
     <>
       <Saudacao
@@ -56,11 +39,16 @@ export default function GestaoDeRh() {
         textoFim="com nosso curso EaD."
         ImagemInicial={ImagemSaudacao}
         conceito="Desenvolva competências técnico-científicas e socioemocionais, aptidões para gerenciar talentos e promover ambientes saudáveis em um mercado em constante transformação tecnológica. "
+        tempoIcone={Duracao}
         tempo="2 anos"
-        ImagemInicial2={ImagemSaudacao2}
+        AvaliacaoIcone={Avaliacao}
+        ImagemInicial2={saudacaoImagem}
+        gradient={gradient}
+        backgroundClaro={backgroundClaro}
+        backgroundEscuro={backgroundEscuro}
       />
 
-      <Formato ImagemFormato={ImagemFormato} />
+      <Formato ImagemFormato={FormatoPng} backgroundEscuro={backgroundEscuro} />
       <Desenvolve
         texto1="Gestão de talentos"
         texto2="Capacidade crítica e analítica"
@@ -69,14 +57,15 @@ export default function GestaoDeRh() {
       />
       <ComoFunciona
         Encontros={Encontros}
-        Avaliacao={Avaliacao}
-        porque={porque}
+        Avaliacao={processoAvaliativo}
+        porque={Escolha}
       />
-      <Depoimentos depoimentosData={depoimentosData} />
+      <Depoimentos backgroundEscuro={backgroundEscuro} />
       <div className="container">
         <SessaoButtons
           matrizCurricular={matrizCurricular}
           linkDoPdf={linkDoPdf}
+          backgroundEscuro={backgroundEscuro}
         />
         <Coordenacao
           imagemSrc={Coordenador}
@@ -86,7 +75,11 @@ export default function GestaoDeRh() {
           bloco="Bloco Q | Sala 03"
         />
       </div>
-      <Finalizacao />
+      <Cursos
+        backgroundEscuro={backgroundEscuro}
+        idsSelecionados={[1, 2, 3, 5]}
+      />
+      <Finalizacao backgroundEscuro={backgroundEscuro} />
     </>
   );
 }
