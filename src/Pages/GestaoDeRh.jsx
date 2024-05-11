@@ -60,7 +60,7 @@ export default function GestaoDeRh() {
         Avaliacao={processoAvaliativo}
         porque={Escolha}
       />
-      <Depoimentos backgroundEscuro={backgroundEscuro} />
+      {/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
       <div className="container">
         <SessaoButtons
           matrizCurricular={matrizCurricular}

@@ -86,17 +86,20 @@ export default function Saudacao({
     });
     ScrollReveal().reveal(".revealTop", { ...revealConfig, origin: "top" });
     ScrollReveal().reveal(".revealLeft", { ...revealConfig, origin: "left" });
-    ScrollReveal().reveal(".revealRight", {
-      ...revealConfig,
-      origin: "right",
-    });
   }, []);
+
+  window.onload = function () {
+    const fundoSaudacao = document.querySelector(".fundoSaudacao");
+    if (fundoSaudacao) {
+      fundoSaudacao.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div>
       <div className="fundoSaudacao" style={{ background: gradient }}>
         <img src={ImagemInicial} alt="Imagem" className="imagem revealTop" />
-        <div className="content-texto revealRight">
+        <div className="content-texto revealBottom">
           <img src={Logo} alt="Logo" className="logo" />
           <div>
             <p className="nome" style={{ fontSize: `${fontSize}px` }}>
