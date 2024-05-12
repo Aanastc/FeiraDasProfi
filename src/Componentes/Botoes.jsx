@@ -2,13 +2,13 @@ import React from "react";
 import matriz from "../assets/icons/matriz.svg";
 import pdf from "../assets/icons/pdf.svg";
 
-export default function SessaoButtons({
+export default function Botoes({
   linkDoPdf,
   matrizCurricular,
   backgroundEscuro,
 }) {
   return (
-    <div className="sessao_buttons">
+    <div className="sessao_buttons conteudoContainer">
       <a
         href={matrizCurricular}
         target="_blank"

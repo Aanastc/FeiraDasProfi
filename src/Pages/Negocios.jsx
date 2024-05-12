@@ -1,6 +1,7 @@
+
 import React, { useEffect, useState } from "react";
 
-export default function Marketing() {
+export default function Negocios() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

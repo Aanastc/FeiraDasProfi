@@ -1,16 +1,15 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
-import emailIcone from "../assets/icons/email.svg";
-import telefoneIcone from "../assets/icons/telefone.svg";
-import blocoIcone from "../assets/icons/bloco.svg";
-
 export default function Coordenacao({
   imagemSrc,
   nome,
   email,
+  emailIcone,
   telefone,
+  telefoneIcone,
   bloco,
+  blocoIcone,
 }) {
   useEffect(() => {
     const infoItem = document.querySelectorAll(".infoItem");
@@ -26,13 +25,13 @@ export default function Coordenacao({
     });
   }, []);
   return (
-    <div className="coordenacao">
+    <div className="conteudoContainer">
       <h2>Contato Coordenação</h2>
-      <div className="coordenacao-info">
-        <div className="imagem-container">
+      <div className="coordenacaoInfo">
+        <div>
           <img src={imagemSrc} alt={nome} />
         </div>
-        <div className="info">
+        <div>
           <p className="coordenacaoNome">{nome}</p>
           <div className="infoItem">
             <img src={emailIcone} />

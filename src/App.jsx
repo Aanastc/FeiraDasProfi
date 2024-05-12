@@ -1,40 +1,33 @@
-import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Home";
+
 // cursos:
-import Ads from "./Pages/Ads";
 import Adm from "./Pages/Adm";
+import Ads from "./Pages/Ads";
 import Contabeis from "./Pages/Contabeis";
-import GesComercial from "./Pages/GesComercial";
-import GesFinanceira from "./Pages/GesFinanceira";
-import GestaoDeRh from "./Pages/GestaoDeRh";
-import Marketing from "./Pages/Marketing";
+import Comercial from "./Pages/Comercial";
+import Financeira from "./Pages/Financeira";
+import Rh from "./Pages/Rh";
+import Negocios from "./Pages/Negocios";
 import Logistica from "./Pages/Logistica";
-import IntNegocios from "./Pages/IntNegocios";
+import Marketing from "./Pages/Marketing";
+import Artificial from "./Pages/Artificial";
 
 const App = () => {
-  useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      document.body.style.backgroundColor = "white";
-      document.body.style.color = "black";
-    }
-  }, []);
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="Ads" element={<Ads />} />
-      <Route path="GestaoDeRh" element={<GestaoDeRh />} />
+      <Route path="Rh" element={<Rh />} />
       <Route path="Adm" element={<Adm />} />
       <Route path="Contabeis" element={<Contabeis />} />
-      <Route path="GesComercial" element={<GesComercial />} />
-      <Route path="GesFinanceira" element={<GesFinanceira />} />
+      <Route path="Comercial" element={<Comercial />} />
+      <Route path="Financeira" element={<Financeira />} />
       <Route path="Marketing" element={<Marketing />} />
       <Route path="Logistica" element={<Logistica />} />
-      <Route path="IntNegocios" element={<IntNegocios />} />
+      <Route path="Negocios" element={<Negocios />} />
+      <Route path="Artificial" element={<Artificial />} />
     </Routes>
   );
 };

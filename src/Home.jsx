@@ -1,29 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import SetaAcessar from "../assets/imgs/CapasHome/SetaAcessar.png";
-import Fundo from "../assets/imgs/CapasHome/Fundo.png";
-import ImagemHome from "../assets/imgs/CapasHome/ImagemHome.png";
-import Linha from "../assets/imgs/CapasHome/Linhasvg.svg";
-import Logo from "../assets/imgs/CapasHome/LogoAzul.png";
+import Fundo from "../src/assets/CapasHome/Fundo.png";
+import ImagemHome from "../src/assets/CapasHome/ImagemHome.png";
+import Linha from "../src/assets/CapasHome/Linhasvg.svg";
+import Logo from "../src/assets/CapasHome/LogoAzul.png";
+import SetaAcessar from "../src/assets/CapasHome/SetaAcessar.png";
 
-import Adm from "../assets/imgs/CapasHome/Adm.png";
-import Ads from "../assets/imgs/CapasHome/Ads.png";
-import Comercial from "../assets/imgs/CapasHome/Comercial.png";
-import Contabeis from "../assets/imgs/CapasHome/Contabeis.png";
-import Logistica from "../assets/imgs/CapasHome/Logistica.png";
-import Financeira from "../assets/imgs/CapasHome/Financeiro.png";
-import Marketing from "../assets/imgs/CapasHome/Marketing.png";
-import Negocios from "../assets/imgs/CapasHome/Negocios.png";
-import Artificial from "../assets/imgs/CapasHome/Artificial.png";
-import Rh from "../assets/imgs/CapasHome/Rh.png";
+import Adm from "../src/assets/CapasHome/Adm.png";
+import Ads from "../src/assets/CapasHome/Ads.png";
+import Artificial from "../src/assets/CapasHome/Artificial.png";
+import Comercial from "../src/assets/CapasHome/Comercial.png";
+import Contabeis from "../src/assets/CapasHome/Contabeis.png";
+import Financeira from "../src/assets/CapasHome/Financeiro.png";
+import Logistica from "../src/assets/CapasHome/Logistica.png";
+import Marketing from "../src/assets/CapasHome/Marketing.png";
+import Negocios from "../src/assets/CapasHome/Negocios.png";
+import Rh from "../src/assets/CapasHome/Rh.png";
 
 export default function Cursos() {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   function irParaADs() {
     navigate("/Ads");
@@ -38,15 +34,15 @@ export default function Cursos() {
   }
 
   function irParaGesComercial() {
-    navigate("/GesComercial");
+    navigate("/Comercial");
   }
 
   function irParaGesFinanceira() {
-    navigate("/GesFinanceira");
+    navigate("/Financeira");
   }
 
   function irParaGestaoDeRh() {
-    navigate("/GestaoDeRh");
+    navigate("/Rh");
   }
 
   function irParaMarketing() {
@@ -58,11 +54,11 @@ export default function Cursos() {
   }
 
   function irParaIntNegocios() {
-    navigate("/IntNegocios");
+    navigate("/Negocios");
   }
 
   function irParaIntArtificial() {
-    navigate("/IntArtificial");
+    navigate("/Artificial");
   }
 
   const ccg = [
@@ -123,11 +119,9 @@ export default function Cursos() {
 
   return (
     <div className="containerHome" style={{ backgroundImage: `url(${Fundo})` }}>
-      <div className="CursoImagemHome">
-        <img src={ImagemHome} alt="" className="img-fluid" />
-      </div>
+      <img src={ImagemHome} alt="" className="img-fluid" />
       <div className="CursoCentros">
-        <h2 className="">Cursos de Comunicação e Gestão</h2>
+        <h2>Cursos de Comunicação e Gestão</h2>
         <img src={Linha} alt="" className="Linha" />
       </div>
       <div className="ButtonsCursosHome">
@@ -142,7 +136,7 @@ export default function Cursos() {
         ))}
       </div>
       <div className="CursoCentros">
-        <h2 className="">Cursos de Tecnologia</h2>
+        <h2>Cursos de Tecnologia</h2>
         <img src={Linha} alt="" className="Linha" />
       </div>
       <div className="ButtonsCursosHome">

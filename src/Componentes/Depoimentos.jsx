@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Estrelas from "../assets/icons/Estrelas.svg";
 
-import hans from "../assets/imgs/hans.png";
+import Hans from "../assets/Depoimentos/hans.png";
 
 export default function Depoimentos({ backgroundEscuro }) {
   const sliderRef = useRef(null);
@@ -107,21 +107,21 @@ export default function Depoimentos({ backgroundEscuro }) {
 
   const depoimentosData = [
     {
-      imageSrc: hans,
+      imageSrc: Hans,
       nome: "Hansmuller Oliveira",
       papel: "Aluno EAD Unifor",
       texto:
         "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
     },
     {
-      imageSrc: hans,
+      imageSrc: Hans,
       nome: "Vitor Andrade",
       papel: "Aluno EAD Unifor",
       texto:
         "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
     },
     {
-      imageSrc: hans,
+      imageSrc: Hans,
       nome: "Mara Núbia Angelim",
       papel: "Aluno EAD Unifor",
       texto:

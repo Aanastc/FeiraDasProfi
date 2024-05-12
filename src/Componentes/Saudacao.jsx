@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import Logo from "../assets/imgs/LogoBranca.png";
-import Ema from "../assets/icons/Ema_1.svg";
+import Logo from "../assets/LogoBranca.png";
+import Ema from "../assets/icons/EmaSaudacao.svg";
 
 export default function Saudacao({
   ImagemInicial,
@@ -92,7 +92,7 @@ export default function Saudacao({
     <div>
       <div className="fundoSaudacao" style={{ background: gradient }}>
         <img src={ImagemInicial} alt="Imagem" className="imagem revealTop" />
-        <div className="content-texto revealBottom">
+        <div className="fundoSaudacao_texto revealBottom">
           <img src={Logo} alt="Logo" className="logo" />
           <div>
             <p className="nome" style={{ fontSize: `${fontSize}px` }}>
@@ -129,15 +129,15 @@ export default function Saudacao({
           </div>
         </div>
       </div>
-      <div className="recepcao">
-        <h3 className="recepcaoTitulo revealLeft">Boas-vindas!</h3>
+      <div className="conteudoContainer">
+        <h2 className="recepcaoTitulo revealLeft">Boas-vindas!</h2>
         <p className="revealLeft">
           Nossos cursos dispõem de uma plataforma educacional personalizada, com
           conteúdo ofertado em diversas mídias. As disciplinas dos cursos EAD
           são teóricas e vivenciais, podendo ser de natureza prática ou
           extensionista.
         </p>
-        <div className="ImagemInicial2 revealBottom">
+        <div className="ImagemConteudo revealBottom">
           <img src={ImagemInicial2} alt="" className="img-fluid" />
         </div>
       </div>

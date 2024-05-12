@@ -1,16 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import Adm from "../assets/imgs/CapasCursos/Adm.png";
-import Ads from "../assets/imgs/CapasCursos/Ads.png";
-import Comercial from "../assets/imgs/CapasCursos/Comercial.png";
-import Contabeis from "../assets/imgs/CapasCursos/Contabeis.png";
-import Logistica from "../assets/imgs/CapasCursos/Logistica.png";
-import Financeira from "../assets/imgs/CapasCursos/Financeira.png";
-import Marketing from "../assets/imgs/CapasCursos/Marketing.png";
-import Negocios from "../assets/imgs/CapasCursos/Negocios.png";
-import Artificial from "../assets/imgs/CapasCursos/Artificial.png";
-import Rh from "../assets/imgs/CapasCursos/Rh.png";
+import Adm from "../assets/CapasCursos/Adm.png";
+import Ads from "../assets/CapasCursos/Ads.png";
+import Comercial from "../assets/CapasCursos/Comercial.png";
+import Contabeis from "../assets/CapasCursos/Contabeis.png";
+import Logistica from "../assets/CapasCursos/Logistica.png";
+import Financeira from "../assets/CapasCursos/Financeira.png";
+import Marketing from "../assets/CapasCursos/Marketing.png";
+import Negocios from "../assets/CapasCursos/Negocios.png";
+import Artificial from "../assets/CapasCursos/Artificial.png";
+import Rh from "../assets/CapasCursos/Rh.png";
 
 export default function Cursos({ backgroundEscuro, idsSelecionados }) {
   const navigate = useNavigate();
@@ -123,7 +123,7 @@ export default function Cursos({ backgroundEscuro, idsSelecionados }) {
   );
 
   return (
-    <div className="containerCursos">
+    <div className="conteudoContainer">
       <h2>Outros cursos EaD</h2>
       <div className="ButtonsCursos">
         {cursosSelecionados.map((curso, index) => (
