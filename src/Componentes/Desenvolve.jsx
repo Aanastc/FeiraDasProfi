@@ -56,7 +56,7 @@ export default function Desenvolve({ texto1, texto2, texto3, texto4 }) {
         </div>
         <div className="imagemContainer">
           <img src={Fundo} alt="" className="fundo" />
-          <img src={Ema} alt="" className="ema" />
+          {/* <img src={Ema} alt="" className="ema" /> */}
         </div>
       </div>
     </div>

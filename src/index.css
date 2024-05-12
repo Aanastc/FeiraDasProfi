@@ -3,7 +3,6 @@
 body {
   font-family: "Poppins", sans-serif;
   word-break: break-word !important;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -137,7 +136,7 @@ a:hover {
   margin-top: -20px;
   padding-left: 6%;
   padding-right: 6%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .cardConceito_conteudo {
@@ -166,11 +165,11 @@ a:hover {
   border-radius: 0.75rem;
   display: grid;
   grid-template-columns: 60px 100px;
-  position: relative;
+  /* position: relative; */
   gap: 1.12rem;
   padding: 0.37rem 1.06rem;
   margin-bottom: 1.75rem;
-  margin-top: -4%;
+  /* margin-top: -4%; */
   margin-left: 5%;
 }
 
@@ -234,7 +233,7 @@ a:hover {
 /* ********************** */
 .desenvolve {
   padding: 0 0 0.7rem 0.7rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .desenvolveGrupo {
@@ -242,15 +241,15 @@ a:hover {
   justify-content: space-between;
 }
 
-.fundo {
+/* .fundo {
   position: relative;
   background-size: cover;
-}
+} */
 
-.ema {
+/* .ema {
   position: absolute;
   right: 0;
-}
+} */
 
 .desenvolveGrupo_topicos {
   display: flex;
