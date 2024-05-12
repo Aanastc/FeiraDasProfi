@@ -21,6 +21,10 @@ import Rh from "../assets/imgs/CapasHome/Rh.png";
 export default function Cursos() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   function irParaADs() {
     navigate("/Ads");
   }

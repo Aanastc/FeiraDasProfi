@@ -88,13 +88,6 @@ export default function Saudacao({
     ScrollReveal().reveal(".revealLeft", { ...revealConfig, origin: "left" });
   }, []);
 
-  window.onload = function () {
-    const fundoSaudacao = document.querySelector(".fundoSaudacao");
-    if (fundoSaudacao) {
-      fundoSaudacao.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div>
       <div className="fundoSaudacao" style={{ background: gradient }}>
