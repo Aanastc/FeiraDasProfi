@@ -33,7 +33,7 @@ export default function GestaoDeRh() {
 
   return (
     <>
-      <Saudacao
+      {/* <Saudacao
         TextoInicio="Torne-se um profissional de "
         curso="Gestão De RH "
         textoFim="com nosso curso EaD."
@@ -46,7 +46,7 @@ export default function GestaoDeRh() {
         gradient={gradient}
         backgroundClaro={backgroundClaro}
         backgroundEscuro={backgroundEscuro}
-      />
+      /> */}
 
       <Formato ImagemFormato={FormatoPng} backgroundEscuro={backgroundEscuro} />
       <Desenvolve
