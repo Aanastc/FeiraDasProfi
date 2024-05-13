@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Estrelas from "../assets/icons/Estrelas.svg";
 
-import Hans from "../assets/Depoimentos/Hans.png";
+// import Hans from "../assets/Depoimentos/Hans.png";
 import Vitor from "../assets/Depoimentos/Vitor.png";
 import Camila from "../assets/Depoimentos/Camila.png";
 import Joyce from "../assets/Depoimentos/Joyce.png";
@@ -112,13 +112,13 @@ export default function Depoimentos({ backgroundEscuro }) {
   }, []);
 
   const depoimentosData = [
-    {
-      imageSrc: Hans,
-      nome: "Hansmuller Oliveira",
-      papel: "Aluno EAD Unifor",
-      texto:
-        "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
-    },
+    // {
+    //   imageSrc: Hans,
+    //   nome: "Hansmuller Oliveira",
+    //   papel: "Aluno EAD Unifor",
+    //   texto:
+    //     "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
+    // },
     {
       imageSrc: Vitor,
       nome: "Vitor Andrade",
