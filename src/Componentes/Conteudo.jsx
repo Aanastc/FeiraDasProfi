@@ -51,7 +51,8 @@ export default function Conteudo({
         <p className="Fundo_texto revealLeft">
           Ao longo do curso, cada semestre - dividido em 2 trimestres - pode
           variar em 2 formatos, dependendo do seu curso. Você pode iniciar pelo
-          formato 1 ou pelo formato 2, dependendo do período que você ingressar.
+          formato 1 ou pelo formato 2, dependendo do período em que você
+          ingressar.
         </p>
         <div className="ImagemConteudo revealRight">
           <img src={ImagemFormato} alt="" className="img-fluid" />
@@ -79,15 +80,15 @@ export default function Conteudo({
             </div>
           </div>
           <div className="imagemContainer">
-            <img src={Ema} alt="" />
+            <img src={Ema} alt="" className="EmaConteudo" />
           </div>
         </div>
       </div>
       <div className="conteudoContainer revealLeft">
         <h2>Como funciona... </h2>
         <p>
-          Cada Percurso representa o conteúdo da disciplina, onde será
-          estruturado em sessões como:
+          Cada Percurso representa o conteúdo da disciplina e será estruturado
+          em sessões, como:
         </p>
       </div>
       <div className="cards-container revealBottom">
@@ -197,9 +198,9 @@ export default function Conteudo({
           se o aluno não atender aos critérios de aprovação regular, conforme a
           Resolução CEPE nº 44/2022 da Universidade de Fortaleza. As Atividades
           Avaliativas presenciais seguem o Decreto nº 9.057/2017 do Ministério
-          da Educação, ocorrendo no Campus da universidade.
+          da Educação, ocorrendo no Campus da Universidade.
         </p>
-        <h2>Porque nos escolher? </h2>
+        <h2>Por que nos escolher? </h2>
         <div className="ImagemConteudo revealBottom">
           <img src={Escolha} alt="" className="img-fluid" />
         </div>

@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Estrelas from "../assets/icons/Estrelas.svg";
 
-import Hans from "../assets/Depoimentos/hans.png";
+import Hans from "../assets/Depoimentos/Hans.png";
+import Vitor from "../assets/Depoimentos/Vitor.png";
+import Camila from "../assets/Depoimentos/Camila.png";
+import Joyce from "../assets/Depoimentos/Joyce.png";
+import Carla from "../assets/Depoimentos/Carla.png";
+import Patricia from "../assets/Depoimentos/Patricia.png";
+import Claudia from "../assets/Depoimentos/Claudia.png";
 
 export default function Depoimentos({ backgroundEscuro }) {
   const sliderRef = useRef(null);
@@ -114,18 +120,46 @@ export default function Depoimentos({ backgroundEscuro }) {
         "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
     },
     {
-      imageSrc: Hans,
+      imageSrc: Vitor,
       nome: "Vitor Andrade",
       papel: "Aluno EAD Unifor",
       texto:
-        "“Nós do EAD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
+        "“Nós do EaD temos acesso ao campus da Unifor e a todos os serviços que o aluno do presencial tem, e isso me chama muita atenção. Para o futuro, eu espero ter uma carreira de excelência, aplicando todo o meu aprendizado.”",
     },
     {
-      imageSrc: Hans,
-      nome: "Mara Núbia Angelim",
-      papel: "Aluno EAD Unifor",
+      imageSrc: Camila,
+      nome: "Camila Almeida",
+      papel: "Aluna EAD Unifor",
       texto:
-        "“Apesar de ser um curso a distância, sinto-me plenamente conectada à comunidade acadêmica. Tenho contato regular com outros alunos por meio de fóruns de discussão, grupos de estudo e atividades propostas pelos professores.”",
+        "“Eu escolhi o EaD aqui da Unifor, pois além de estar na melhor, consigo também fazer uma melhor gestão do meu tempo. Inicialmente achei que fosse ser mais complexo, porém as ferramentas utilizadas pela Universidade facilitam imensamente o o processo.”",
+    },
+    {
+      imageSrc: Joyce,
+      nome: "Joyce Maciel",
+      papel: "Aluna EAD Unifor",
+      texto:
+        "“O Marketing Digital da Unifor ajudou a me estabilizar profissionalmente. Eu, como jornalista esportiva, usufruí de muito do conhecimento que aprendi no curso para aplicá-lo no meu trabalho.”",
+    },
+    {
+      imageSrc: Carla,
+      nome: "Carla Elke Pitaguary",
+      papel: "Aluna EAD Unifor",
+      texto:
+        "“Além de ser a melhor universidade, vejo o cuidado da Unifor com o aluno, mesmo à distância. É uma universidade que procura sempre estar de pronto atendimento para um bom desempenho e desenvoltura do estudante.”",
+    },
+    {
+      imageSrc: Patricia,
+      nome: "Patrícia Carvalho",
+      papel: "Aluna EAD Unifor",
+      texto:
+        "“Escolhi a Unifor por conta da qualidade do ensino. Com novas metas, busquei comodidade por ser próximo à minha casa e por ter uma infraestrutura, que é impecável.”",
+    },
+    {
+      imageSrc: Claudia,
+      nome: "Cláudia Parente",
+      papel: "Aluna EAD Unifor",
+      texto:
+        "“Eu sou veterana da casa, fiz desde a graduação até o mestrado aqui na Universidade de Fortaleza. Então, quando você pensa em fazer um curso EaD, com todas as desafios que a modalidade tem, você procura qualidade, algo que encontrei aqui.”",
     },
   ];
 
@@ -142,17 +176,21 @@ export default function Depoimentos({ backgroundEscuro }) {
           {depoimentosData.map((depoimento, index) => (
             <div key={index} className="image-item Depoimentos">
               <div>
-                <img src={depoimento.imageSrc} alt="" />
+                <img
+                  src={depoimento.imageSrc}
+                  alt=""
+                  className="depoimentoImagem"
+                />
               </div>
-              <div className="Divdepoimento">
+              <div className="DivDepoimento">
                 <div>
-                  <p className="DepoimentosNome">{depoimento.nome}</p>
-                  <p className="DepoimentosPapel">{depoimento.papel}</p>
+                  <div className="DivDepoimento_aluno">
+                    <p className="DepoimentosNome">{depoimento.nome}</p>
+                    <p className="DepoimentosPapel">{depoimento.papel}</p>
+                  </div>
                   <p className="DepoimentosTexto">{depoimento.texto}</p>
                 </div>
-                <div>
-                  <img src={Estrelas} alt="" />
-                </div>
+                <img src={Estrelas} alt="" className="Estrelas" />
               </div>
             </div>
           ))}

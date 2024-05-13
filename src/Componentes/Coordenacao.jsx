@@ -27,7 +27,7 @@ export default function Coordenacao({
       <h2>Contato Coordenação</h2>
       <div className="coordenacaoInfo">
         <div>
-          <img src={imagemSrc} alt={nome} />
+          <img src={imagemSrc} alt={nome} className="coordenacaoInfo_Foto" />
         </div>
         <div>
           <p className="coordenacaoNome">{nome}</p>

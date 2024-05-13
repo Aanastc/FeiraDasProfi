@@ -40,7 +40,7 @@ export default function Rh() {
         curso="Gestão De RH "
         textoFim="com nosso curso EaD."
         ImagemInicial={ImagemSaudacao}
-        conceito="Desenvolva competências técnico-científicas e socioemocionais, aptidões para gerenciar talentos e promover ambientes saudáveis em um mercado em constante transformação tecnológica. "
+        conceito="Desenvolva competências técnico-científicas e socioemocionais, aptidões para gerenciar talentos e promover ambientes saudáveis em um mercado em constante transformação tecnológica."
         tempoIcone={tempoIcone}
         tempo="2 anos"
         AvaliacaoIcone={AvaliacaoIcone}
@@ -77,7 +77,7 @@ export default function Rh() {
       />
       <Cursos
         backgroundEscuro={backgroundEscuro}
-        idsSelecionados={[1, 2, 3, 5]}
+        idsSelecionados={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
       />
       <Final backgroundEscuro={backgroundEscuro} />
     </div>

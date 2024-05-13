@@ -78,6 +78,13 @@ a:hover {
   margin: 1.75rem 0;
 }
 
+.CursoCentrosTitulo {
+  color: #0f112b;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
 .Linha {
   max-width: 50%;
 }
@@ -100,6 +107,16 @@ a:hover {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
+.CursoHome.selected {
+  background-color: #004af7;
+}
+
+.CursoNomeHome.selected {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #fff;
+}
+
 .CursoHomeInfos {
   display: flex;
   align-items: center;
@@ -108,11 +125,11 @@ a:hover {
 
 .CursoNomeHome {
   color: #0f112b;
-  font-family: Poppins;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 131.655%;
   text-align: left;
+  margin: 0;
 }
 
 /* Saudacao */
@@ -170,10 +187,20 @@ a:hover {
   margin: 0 0.2rem 0.5rem 0;
 }
 
+.emaSaudacao {
+  width: 8.6875rem;
+  height: 10.75rem;
+}
+
 .emaPosition {
   position: absolute;
   right: 0;
   z-index: 999;
+}
+
+.saudacaoIcone {
+  width: 0.75rem;
+  height: 1.0625rem;
 }
 
 .cardConceito2_fundo {
@@ -224,11 +251,16 @@ a:hover {
   align-items: center;
 }
 
+.EmaConteudo {
+  width: 13.08706rem;
+}
+
 .desenvolveGrupo_topicos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-right: 0.8rem;
+  gap: 1rem;
 }
 
 .flexBaseline {
@@ -316,7 +348,7 @@ a:hover {
 
 .slider-wrapper .image-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 10px;
   overflow-x: auto;
   scrollbar-width: none;
@@ -411,30 +443,45 @@ a[href^="mailto"]::before {
   gap: 0.69rem;
 }
 
-.Divdepoimento {
+.DivDepoimento {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
+.depoimentoImagem {
+  width: 3rem;
+  height: 3rem;
+}
+
+.DivDepoimento_aluno {
+  display: flex;
+  flex-direction: column;
+}
+
 .DepoimentosNome {
   color: #000;
   font-size: 1rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 0.008rem 0;
 }
 
 .DepoimentosPapel {
   color: #a4a4a4;
   font-size: 0.75rem;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 0.375rem 0;
 }
 
 .DepoimentosTexto {
   font-size: 0.875rem;
   margin-bottom: 0;
+}
+
+.Estrelas {
+  width: 5.9375rem;
+  height: 1.1875rem;
 }
 
 /* Botoes Links */
@@ -488,6 +535,10 @@ a[href^="mailto"]::before {
   font-size: 0.7rem;
   font-weight: 400;
   margin: 0.5rem 0 0 0;
+}
+
+.coordenacaoInfo_Foto {
+  width: 10.875rem;
 }
 
 /* Cursos */
