@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Saudacao from "../Componentes/Saudacao";
 import Conteudo from "../Componentes/Conteudo";
 import Depoimentos from "../Componentes/Depoimentos";
-import Botoes from "../Componentes/Botoes";
 import Coordenacao from "../Componentes/Coordenacao";
 import Cursos from "../Componentes/Cursos";
 import Final from "../Componentes/Final";
+
+import matriz from "../assets/icons/matriz.svg";
+import pdf from "../assets/icons/pdf.svg";
 
 // Especifico
 import ImagemSaudacao from "../assets/GestaoDeRh/Capa.png";
@@ -18,9 +20,6 @@ import Encontros from "../assets/GestaoDeRh/Encontros.png";
 import processoAvaliativo from "../assets/GestaoDeRh/processoAvaliativo.png";
 import Escolha from "../assets/GestaoDeRh/escolha.png";
 import Coordenador from "../assets/GestaoDeRh/Coordenador.png";
-
-import matrizCurricular from "../assets/GestaoDeRh/folder.pdf";
-import linkDoPdf from "../assets/GestaoDeRh/folder.pdf";
 
 export default function Rh() {
   useEffect(() => {
@@ -62,11 +61,30 @@ export default function Rh() {
         Escolha={Escolha}
       />
       <Depoimentos backgroundEscuro={backgroundEscuro} />
-      <Botoes
-        matrizCurricular={matrizCurricular}
-        linkDoPdf={linkDoPdf}
-        backgroundEscuro={backgroundEscuro}
-      />
+      <div className="sessao_buttons conteudoContainer">
+        <a
+          href="https://www.unifor.br/web/graduacao/ead/gestao-rh"
+          target="_blank"
+          className="botao"
+          style={{ background: backgroundEscuro }}
+        >
+          <div>
+            <img src={matriz} alt="Matriz Curricular" />
+          </div>
+          <p className="botaoNome">Matriz Curricular</p>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1mx6GoD5pFSwnEzIfg4NLNn438BELZHt9/view?usp=sharing"
+          target="_blank"
+          className="botao"
+          style={{ background: backgroundEscuro }}
+        >
+          <div>
+            <img src={pdf} alt="Baixar PDF" />
+          </div>
+          <p className="botaoNome">Baixar PDF</p>
+        </a>
+      </div>
       <Coordenacao
         backgroundEscuro={backgroundEscuro}
         imagemSrc={Coordenador}

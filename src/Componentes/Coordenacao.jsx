@@ -29,7 +29,7 @@ export default function Coordenacao({
         <div>
           <img src={imagemSrc} alt={nome} className="coordenacaoInfo_Foto" />
         </div>
-        <div>
+        <div className="coordenacaoSobre">
           <p className="coordenacaoNome">{nome}</p>
           <div className="infoItem">
             <svg

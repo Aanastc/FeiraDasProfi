@@ -208,7 +208,7 @@ a:hover {
   height: 2.625rem;
   border-radius: 0.75rem;
   display: grid;
-  grid-template-columns: 60px 100px;
+  grid-template-columns: 70px 100px;
   position: relative;
   gap: 1.12rem;
   padding: 0.37rem 1.06rem;
@@ -541,6 +541,10 @@ a[href^="mailto"]::before {
   width: 10.875rem;
 }
 
+.coordenacaoSobre {
+  word-break: break-all;
+}
+
 /* Cursos */
 .ButtonsCursos {
   display: grid;
@@ -555,6 +559,7 @@ a[href^="mailto"]::before {
   border-radius: 0.75rem;
   border: 1px solid;
   padding: 0;
+  background: transparent;
 }
 
 .CursoImage {
@@ -566,6 +571,7 @@ a[href^="mailto"]::before {
   font-size: 0.625rem;
   font-weight: 400;
   margin: 0 0.5rem;
+  text-align: left;
 }
 
 /* Final */
@@ -618,6 +624,10 @@ a[href^="mailto"]::before {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  .EmaConteudo {
+    display: none;
   }
 }
 

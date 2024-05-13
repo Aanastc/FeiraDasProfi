@@ -15,105 +15,69 @@ import Rh from "../assets/CapasCursos/Rh.png";
 export default function Cursos({ backgroundEscuro, idsSelecionados }) {
   const navigate = useNavigate();
 
-  function irParaADs() {
-    navigate("/Ads");
-  }
-
-  function irParaAdm() {
-    navigate("/Adm");
-  }
-
-  function irParaContabeis() {
-    navigate("/Contabeis");
-  }
-
-  function irParaGesComercial() {
-    navigate("/GesComercial");
-  }
-
-  function irParaGesFinanceira() {
-    navigate("/GesFinanceira");
-  }
-
-  function irParaGestaoDeRh() {
-    navigate("/GestaoDeRh");
-  }
-
-  function irParaMarketing() {
-    navigate("/Marketing");
-  }
-
-  function irParaLogistica() {
-    navigate("/Logistica");
-  }
-
-  function irParaIntNegocios() {
-    navigate("/IntNegocios");
-  }
-
-  function irParaIntArtificial() {
-    navigate("/IntArtificial");
+  function irPara(rota) {
+    navigate(rota);
   }
 
   const cursosDisponiveis = [
     {
       id: 1,
       capa: Adm,
-      onClick: irParaAdm,
+      rota: "/Adm",
       nome: "Administração",
     },
     {
       id: 2,
       capa: Ads,
-      onClick: irParaADs,
+      rota: "/Ads",
       nome: "Análise e Desenvolvimento de Sistemas",
     },
     {
       id: 3,
       capa: Comercial,
-      onClick: irParaGesComercial,
+      rota: "/Comercial",
       nome: "Gestão Comercial",
     },
     {
       id: 4,
       capa: Contabeis,
-      onClick: irParaContabeis,
+      rota: "/Contabeis",
       nome: "Ciências Contábeis",
     },
     {
       id: 5,
       capa: Logistica,
-      onClick: irParaLogistica,
+      rota: "/Logistica",
       nome: "Logística",
     },
     {
       id: 6,
       capa: Financeira,
-      onClick: irParaGesFinanceira,
+      rota: "/Financeira",
       nome: "Gestão Financeira",
     },
     {
       id: 7,
       capa: Marketing,
-      onClick: irParaMarketing,
+      rota: "/Marketing",
       nome: "Marketing Digital",
     },
     {
       id: 8,
       capa: Negocios,
-      onClick: irParaIntNegocios,
+      rota: "/Negocios",
       nome: "Inteligência de Negócios",
     },
     {
       id: 9,
       capa: Artificial,
-      onClick: irParaIntArtificial,
+      rota: "/Artificial",
       nome: "Inteligência Artificial",
     },
     {
       id: 10,
       capa: Rh,
-      onClick: irParaGestaoDeRh,
+      rota: "/Rh",
       nome: "Gestão de RH",
     },
   ];
@@ -131,7 +95,7 @@ export default function Cursos({ backgroundEscuro, idsSelecionados }) {
             className="Curso"
             style={{ borderColor: backgroundEscuro }}
             key={index}
-            onClick={curso.onClick}
+            onClick={() => irPara(curso.rota)}
           >
             <img
               src={curso.capa}
