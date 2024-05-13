@@ -17,15 +17,7 @@ import Ema from "../assets/GestaoDeRh/EmaConteudo.png";
 import Encontros from "../assets/GestaoDeRh/Encontros.png";
 import processoAvaliativo from "../assets/GestaoDeRh/processoAvaliativo.png";
 import Escolha from "../assets/GestaoDeRh/escolha.png";
-import webAula from "../assets/GestaoDeRh/webAula.svg";
-import videoAula from "../assets/GestaoDeRh/videoAula.svg";
-import me from "../assets/GestaoDeRh/me.svg";
-import exercicio from "../assets/GestaoDeRh/exercicio.svg";
-import mc from "../assets/GestaoDeRh/mc.svg";
 import Coordenador from "../assets/GestaoDeRh/Coordenador.png";
-import emailIcone from "../assets/GestaoDeRh/email.svg";
-import telefoneIcone from "../assets/GestaoDeRh/telefone.svg";
-import blocoIcone from "../assets/GestaoDeRh/bloco.svg";
 
 import matrizCurricular from "../assets/GestaoDeRh/folder.pdf";
 import linkDoPdf from "../assets/GestaoDeRh/folder.pdf";
@@ -68,11 +60,6 @@ export default function Rh() {
         Encontros={Encontros}
         processoAvaliativo={processoAvaliativo}
         Escolha={Escolha}
-        webAula={webAula}
-        videoAula={videoAula}
-        me={me}
-        exercicio={exercicio}
-        mc={mc}
       />
       <Depoimentos backgroundEscuro={backgroundEscuro} />
       <Botoes
@@ -81,13 +68,11 @@ export default function Rh() {
         backgroundEscuro={backgroundEscuro}
       />
       <Coordenacao
+        backgroundEscuro={backgroundEscuro}
         imagemSrc={Coordenador}
         nome="Prof. Dr. Josimar Souza Costa"
-        emailIcone={emailIcone}
         email="josimarcosta@unifor.br"
-        telefoneIcone={telefoneIcone}
         telefone="(85) 3477.3192"
-        blocoIcone={blocoIcone}
         bloco="Bloco Q | Sala 03"
       />
       <Cursos

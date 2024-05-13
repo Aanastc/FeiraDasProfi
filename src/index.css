@@ -328,7 +328,7 @@ a:hover {
 }
 
 .slider-wrapper .image-list .image-item {
-  width: 300px;
+  width: 270px;
   height: 21.75rem;
   object-fit: cover;
 }
@@ -442,6 +442,7 @@ a[href^="mailto"]::before {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 
 .botao {
@@ -452,7 +453,6 @@ a[href^="mailto"]::before {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 1.75rem;
 }
 
 .botaoNome {
