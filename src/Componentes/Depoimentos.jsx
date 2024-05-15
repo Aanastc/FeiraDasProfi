@@ -123,7 +123,7 @@ export default function Depoimentos({ backgroundEscuro }) {
     },
     {
       imageSrc: Diego,
-      nome: "Diego",
+      nome: "Diego Latimberg",
       papel: "Aluno EAD Unifor",
       texto:
         "“Optei pelo EaD Unifor para ter uma conciliação entre trabalho e estudo, tendo em vista horários flexíveis onde posso estudar quando e onde quiser. Mesmo sendo ensino a distância, me sinto próximos ao meus professores tendo todo o suporte que preciso.”",
