@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import Estrelas from "../assets/icons/Estrelas.svg";
 
-import Hans from "../assets/Depoimentos/Hans.png";
+import Hansmuller from "../assets/Depoimentos/Hansmuller.png";
 import Vitor from "../assets/Depoimentos/Vitor.png";
 import Camila from "../assets/Depoimentos/Camila.png";
 import Joyce from "../assets/Depoimentos/Joyce.png";
 import Carla from "../assets/Depoimentos/Carla.png";
 import Patricia from "../assets/Depoimentos/Patricia.png";
 import Claudia from "../assets/Depoimentos/Claudia.png";
+import Diego from "../assets/Depoimentos/Diego.png";
+import Maikon from "../assets/Depoimentos/Maikon.png";
 
 export default function Depoimentos({ backgroundEscuro }) {
   const sliderRef = useRef(null);
@@ -20,16 +22,16 @@ export default function Depoimentos({ backgroundEscuro }) {
       var scrollbarThumb = "";
       var children = Array.from(e.children);
       children.forEach((x) => {
-        if (x.querySelectorAll(".slide-button").length != 0) {
+        if (x.querySelectorAll(".slide-button").length !== 0) {
           slideButtons = x.querySelectorAll(".slide-button");
         }
-        if (x.querySelectorAll(".image-list").length != 0) {
+        if (x.querySelectorAll(".image-list").length !== 0) {
           imageList = x.querySelector(".image-list");
         }
-        if (x.querySelectorAll(".slider-scrollbar").length != 0) {
+        if (x.querySelectorAll(".slider-scrollbar").length !== 0) {
           sliderScrollbar = x.querySelector(".slider-scrollbar");
         }
-        if (x.querySelectorAll(".scrollbar-thumb").length != 0) {
+        if (x.querySelectorAll(".scrollbar-thumb").length !== 0) {
           scrollbarThumb = x.querySelector(".scrollbar-thumb");
         }
       });
@@ -113,11 +115,25 @@ export default function Depoimentos({ backgroundEscuro }) {
 
   const depoimentosData = [
     {
-      imageSrc: Hans,
+      imageSrc: Hansmuller,
       nome: "Hansmuller Oliveira",
       papel: "Aluno EAD Unifor",
       texto:
         "“A EaD da Unifor me oferece aulas que são desenvolvidas e ministradas por professores qualificados e especialistas em suas áreas, garantindo a qualidade do ensino e materiais didáticos. [...] Temos um suporte abrangente, incluindo tutores online, serviços de orientação acadêmica, entre outros.”",
+    },
+    {
+      imageSrc: Diego,
+      nome: "Diego",
+      papel: "Aluno EAD Unifor",
+      texto:
+        "“Optei pelo EaD Unifor para ter uma conciliação entre trabalho e estudo, tendo em vista horários flexíveis onde posso estudar quando e onde quiser. Mesmo sendo ensino a distância, me sinto próximos ao meus professores tendo todo o suporte que preciso.”",
+    },
+    {
+      imageSrc: Maikon,
+      nome: "Maikon Araújo ",
+      papel: "Aluno EAD Unifor",
+      texto:
+        "“Escolhi o curso logística EaD para me tornar um profissional cada vez mais especializado. O ambiente online é prático e simples e você tem ótimas experiências com as ferramentas disponíveis para você ter o melhor desempenho durante todo o curso.”",
     },
     {
       imageSrc: Vitor,
