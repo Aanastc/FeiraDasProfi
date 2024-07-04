@@ -1,6 +1,8 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 import Home from "./Home";
+import Home2 from "./Home2";
 
 // cursos:
 import Adm from "./Pages/Adm";
@@ -17,7 +19,7 @@ import Artificial from "./Pages/Artificial";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={isMobile ? <Home /> : <Home2 />} />
       <Route path="Ads" element={<Ads />} />
       <Route path="Rh" element={<Rh />} />
       <Route path="Adm" element={<Adm />} />
@@ -28,6 +30,7 @@ const App = () => {
       <Route path="Logistica" element={<Logistica />} />
       <Route path="Negocios" element={<Negocios />} />
       <Route path="Artificial" element={<Artificial />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };

@@ -588,6 +588,25 @@ a[href^="mailto"]::before {
   max-height: 2.772rem;
 }
 
+/* Home 2 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem;
+}
+
+.scan-text {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.qr-code {
+  width: 60%;
+}
+
 /* BreakPoints  */
 @media (max-width: 280px) {
   .imagem {
