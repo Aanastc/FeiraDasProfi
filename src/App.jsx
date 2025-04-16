@@ -17,22 +17,23 @@ import Marketing from "./Pages/Marketing";
 import Artificial from "./Pages/Artificial";
 
 const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={isMobile ? <Home /> : <Home2 />} />
-      <Route path="Ads" element={<Ads />} />
-      <Route path="Rh" element={<Rh />} />
-      <Route path="Adm" element={<Adm />} />
-      <Route path="Contabeis" element={<Contabeis />} />
-      <Route path="Comercial" element={<Comercial />} />
-      <Route path="Financeira" element={<Financeira />} />
-      <Route path="Marketing" element={<Marketing />} />
-      <Route path="Logistica" element={<Logistica />} />
-      <Route path="Negocios" element={<Negocios />} />
-      <Route path="Artificial" element={<Artificial />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
-  );
+	return (
+		<Routes>
+			<Route path="/" element={isMobile ? <Home /> : <Home2 />} />
+			{/* <Route path="/" element={<Home />} /> */}
+			<Route path="Ads" element={<Ads />} />
+			<Route path="Rh" element={<Rh />} />
+			<Route path="Adm" element={<Adm />} />
+			<Route path="Contabeis" element={<Contabeis />} />
+			<Route path="Comercial" element={<Comercial />} />
+			<Route path="Financeira" element={<Financeira />} />
+			<Route path="Marketing" element={<Marketing />} />
+			<Route path="Logistica" element={<Logistica />} />
+			<Route path="Negocios" element={<Negocios />} />
+			<Route path="Artificial" element={<Artificial />} />
+			<Route path="*" element={<Navigate to="/" />} />
+		</Routes>
+	);
 };
 
 export default App;
