@@ -557,7 +557,7 @@ a[href^="mailto"]::before {
 }
 
 .CursoImage {
-  border-radius: 0.75rem 0rem 0rem 0.75rem;
+  border-radius: 0.70rem 0rem 0rem 0.70rem;
 }
 
 .CursoNome {
