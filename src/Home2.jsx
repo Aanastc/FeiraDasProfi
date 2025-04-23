@@ -1,10 +1,17 @@
 import qrCode from "../src/assets/qrCode.jpg";
+import Logo from "../src/assets/CapasHome/LogoAzulMarinho.png";
+import "./Home2.css";
 
 export default function Home2() {
-  return (
-    <div className="container">
-      <p className="scan-text">Por favor, escaneie o QR code abaixo:</p>
-      <img src={qrCode} alt="QR Code" className="qr-code" />
-    </div>
-  );
+	return (
+		<div className="containerHome2">
+			<img src={Logo} alt="" className="Logo_Home2" />
+			<div className="desktop_version">
+				<p className="scan-text">
+					Aponte a câmera do seu celular para este QR Code:
+				</p>
+				<img src={qrCode} alt="QR Code" className="qr-code" />
+			</div>
+		</div>
+	);
 }
