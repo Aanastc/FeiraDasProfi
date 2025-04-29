@@ -1,9 +1,9 @@
-import Logo from "../assets/icons/LogoFinal.svg";
+import Logo from "../assets/Versao 25.1/logo-ead-unifor-horizontal.png";
 
 export default function Final({ backgroundEscuro }) {
-  return (
-    <div className="FinalizacaoFundo" style={{ background: backgroundEscuro }}>
-      <img src={Logo} alt="" />
-    </div>
-  );
+	return (
+		<div className="FinalizacaoFundo" style={{ background: backgroundEscuro }}>
+			<img src={Logo} alt="" />
+		</div>
+	);
 }

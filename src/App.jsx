@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { isMobile } from "react-device-detect";
+// import { isMobile } from "react-device-detect";
 import Home from "./Home";
 import Home2 from "./Home2";
 
@@ -19,8 +19,8 @@ import Artificial from "./Pages/Artificial";
 const App = () => {
 	return (
 		<Routes>
-			<Route path="/" element={isMobile ? <Home /> : <Home2 />} />
-			{/* <Route path="/" element={<Home />} /> */}
+			{/* <Route path="/" element={isMobile ? <Home /> : <Home2 />} /> */}
+			<Route path="/" element={<Home />} />
 			<Route path="Ads" element={<Ads />} />
 			<Route path="Rh" element={<Rh />} />
 			<Route path="Adm" element={<Adm />} />

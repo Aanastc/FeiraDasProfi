@@ -1,103 +1,76 @@
-import React, { useEffect, useState } from "react";
-import Saudacao from "../Componentes/Saudacao";
-import Conteudo from "../Componentes/Conteudo";
-import Depoimentos from "../Componentes/Depoimentos";
-import Coordenacao from "../Componentes/Coordenacao";
-import Cursos from "../Componentes/Cursos";
-import Final from "../Componentes/Final";
-
-import matriz from "../assets/icons/matriz.svg";
-import pdf from "../assets/icons/pdf.svg";
+import React, { useState } from "react";
+import Saudacao from "../Componentes/Saudacao.jsx";
+import Conteudo from "../Componentes/Conteudo.jsx";
+import Unifor from "../Componentes/Unifor.jsx";
+import Depoimentos from "../Componentes/Depoimentos.jsx";
+import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
-import ImagemSaudacao from "../assets/Contabeis/Capa.png";
-import tempoIcone from "../assets/Contabeis/tempo.png";
-import AvaliacaoIcone from "../assets/Contabeis/avaliacao.png";
-import ImagemInicial2 from "../assets/Contabeis/saudacaoImagem.png";
-import Formato from "../assets/Contabeis/Formato.png";
-import Ema from "../assets/Contabeis/EmaConteudo.png";
-import Encontros from "../assets/Contabeis/Encontros.png";
-import processoAvaliativo from "../assets/Contabeis/processoAvaliativo.png";
-import Escolha from "../assets/Contabeis/escolha.png";
-import Coordenador from "../assets/Contabeis/Coordenador.png";
+import ImagemSaudacao from "../assets/Versao 25.1/Contabilidade/header-image.png";
+import Ampuleta from "../assets/Versao 25.1/Contabilidade/icone-ampuleta.png";
+import Prova from "../assets/Versao 25.1/Contabilidade/icone-prova.png";
+import Recursos from "../assets/Versao 25.1/Contabilidade/imagem-recursos.png";
+import Encontros from "../assets/Versao 25.1/Contabilidade/imagem-encontros.png";
+import Avaliacoes from "../assets/Versao 25.1/Contabilidade/imagem-avaliacoes.png";
+import Vantagens from "../assets/Versao 25.1/Contabilidade/imagem-vantagens.png";
 
 export default function Contabeis() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+	const [gradient, setGradient] = useState(
+		"linear-gradient(270deg, var(--color-turquoise-600, #0F9285) 20%, var(--color-turquoise-500, #16B6A3) 50%, var(--color-turquoise-600, #0F9285) 80.29%)"
+	);
+	const [backgroundClaro, setbackgroundClaro] = useState("#CDFAF1");
+	const [backgroundEscuro, setbackgroundEscuro] = useState("#0F9285");
 
-  const [gradient, setGradient] = useState(
-    "radial-gradient(154.34% 144.66% at -2.8% 95.49%, #C6E2AA 11.42%, #58931D 67.99%)"
-  );
-  const [backgroundClaro, setbackgroundClaro] = useState("#EBFFD8");
-  const [backgroundEscuro, setbackgroundEscuro] = useState("#58931D");
+	const tags = [
+		{
+			textTag: "Contabilidade fiscal, gerencial e societária",
+		},
+		{
+			textTag: "Analista de balanços",
+		},
+		{
+			textTag: "Auditoria",
+		},
+		{
+			textTag: "Planejamento tributário e financeiro",
+		},
+		{
+			textTag: "Analista de demonstrações contábeis",
+		},
+		{
+			textTag: "Perícia contábil",
+		},
+	];
 
-  return (
-    <div>
-      <Saudacao
-        TextoInicio="Prepare-se para o mercado com nosso curso EaD de "
-        curso="Ciências Contábeis "
-        textoFim="."
-        ImagemInicial={ImagemSaudacao}
-        conceito="Desenvolva competências essenciais, promovendo zelo e pensamento crítico. Capacite-se para orientar gestores, priorizar o controle e garantir a eficácia organizacional, valorizando conformidade legal. "
-        tempoIcone={tempoIcone}
-        tempo="4 anos"
-        AvaliacaoIcone={AvaliacaoIcone}
-        ImagemInicial2={ImagemInicial2}
-        gradient={gradient}
-        backgroundClaro={backgroundClaro}
-        backgroundEscuro={backgroundEscuro}
-      />
-      <Conteudo
-        backgroundEscuro={backgroundEscuro}
-        ImagemFormato={Formato}
-        texto1="Comunicação e Colaboração"
-        texto2="Auditoria Contábil"
-        texto3="Contabilidade de Custos"
-        texto4="Contabilidade Financeira"
-        Ema={Ema}
-        Encontros={Encontros}
-        processoAvaliativo={processoAvaliativo}
-        Escolha={Escolha}
-      />
-      <Depoimentos backgroundEscuro={backgroundEscuro} />
-      <div className="sessao_buttons conteudoContainer">
-        <a
-          href="https://www.unifor.br/web/graduacao/ead/ciencias-contabeis"
-          target="_blank"
-          className="botao"
-          style={{ background: backgroundEscuro }}
-        >
-          <div>
-            <img src={matriz} alt="Matriz Curricular" />
-          </div>
-          <p className="botaoNome">Matriz Curricular</p>
-        </a>
-        <a
-          href="https://drive.google.com/file/d/1E9GCTl-cFLWpxUPKNCyGpUJzoDl6a5nO/view?usp=sharing"
-          target="_blank"
-          className="botao"
-          style={{ background: backgroundEscuro }}
-        >
-          <div>
-            <img src={pdf} alt="Baixar PDF" />
-          </div>
-          <p className="botaoNome">Baixar PDF</p>
-        </a>
-      </div>
-      <Coordenacao
-        backgroundEscuro={backgroundEscuro}
-        imagemSrc={Coordenador}
-        nome="Prof. Dra. Alexandra Alencar Siebra"
-        email="contabeis@unifor.br"
-        telefone="(85) 3477.3195"
-        bloco="Bloco Q | Sala 03"
-      />
-      <Cursos
-        backgroundEscuro={backgroundEscuro}
-        idsSelecionados={[1, 2, 3, 5, 6, 7, 8, 9, 10]}
-      />
-      <Final backgroundEscuro={backgroundEscuro} />
-    </div>
-  );
+	return (
+		<div>
+			<Saudacao
+				ImagemInicial={ImagemSaudacao}
+				TextoInicio="Prepare-se para o mercado com nosso curso de  "
+				curso="Ciências Contábeis "
+				textoFim="em EaD."
+				gradient={gradient}
+				backgroundClaro={backgroundClaro}
+				backgroundEscuro={backgroundEscuro}
+			/>
+			<Conteudo
+				backgroundClaro={backgroundClaro}
+				backgroundEscuro={backgroundEscuro}
+				conceito="Desenvolva competências essenciais, promovendo zelo e pensamento crítico. Capacite-se para orientar gestores, priorizar o controle e garantir a eficácia organizacional, valorizando conformidade legal."
+				Ampuleta={Ampuleta}
+				tempo="4 anos"
+				Prova={Prova}
+				conceito2="Com o curso de Ciências Contábeis da EaD Unifor, você desenvolve competências para atuar com precisão e visão estratégica nas áreas financeira, contábil e gerencial. Prepare-se para interpretar dados, apoiar decisões empresariais e contribuir para o crescimento de organizações públicas e privadas."
+				textoTags={tags}
+			/>
+			<Unifor
+				Recursos={Recursos}
+				Encontros={Encontros}
+				Avaliacoes={Avaliacoes}
+				Vantagens={Vantagens}
+			/>
+			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/ciencias-contabeis" />
+		</div>
+	);
 }

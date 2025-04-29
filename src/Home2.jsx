@@ -4,7 +4,7 @@ import "./Home2.css";
 
 export default function Home2() {
 	return (
-		<div className="containerHome2">
+		<div className="Unifor containerHome2">
 			<img src={Logo} alt="" className="Logo_Home2" />
 			<div className="desktop_version">
 				<p className="scan-text">
