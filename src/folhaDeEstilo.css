@@ -126,6 +126,7 @@ button svg path {
 
 /* Depoimento */
 .fundo_depoimento {
+  border-radius: var(--radius-100) 0 0 0;
   padding: var(--space-150, 1.5rem) 1.125rem;
 }
 
@@ -199,6 +200,11 @@ button svg path {
   font-size: 0.875rem;
   font-weight: 400;
   align-self: stretch;
+}
+
+.logo_final {
+  width: 8.4375rem;
+  height: 1.8125rem;
 }
 
 /* coisas que vão estar no ds */
