@@ -12,22 +12,22 @@ export default function Conteudo({
 }) {
 	return (
 		<div className="Unifor">
-			<div className="flexbox__center--end margin__bottom--default">
+			<div className="saudacao_container margin__bottom--default">
 				<div
 					className="saudacao_contet--infos container-xs"
 					style={{ background: backgroundClaro }}>
 					<p className="paragraph">{conceito}</p>
-				</div>
-				<div
-					className="saudacao_contet--infos-plus"
-					style={{ background: backgroundEscuro }}>
-					<div className="flexbox__center">
-						<img src={Ampulheta} alt="" className="saudacaoIcone" />
-						<p className="tags">{tempo}</p>
-					</div>
-					<div className="flexbox__center">
-						<img src={Prova} alt="" className="saudacaoIcone" />
-						<p className="tags">Avaliações Presenciais</p>
+					<div
+						className="saudacao_contet--infos-plus"
+						style={{ background: backgroundEscuro }}>
+						<div className="flexbox__center">
+							<img src={Ampulheta} alt="" className="saudacaoIcone" />
+							<p className="tags">{tempo}</p>
+						</div>
+						<div className="flexbox__center">
+							<img src={Prova} alt="" className="saudacaoIcone" />
+							<p className="tags">Avaliações Presenciais</p>
+						</div>
 					</div>
 				</div>
 			</div>

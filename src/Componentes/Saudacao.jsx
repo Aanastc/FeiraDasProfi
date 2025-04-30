@@ -8,7 +8,7 @@ export default function Saudacao({
 	gradient,
 }) {
 	return (
-		<div className="Unifor">
+		<div className="Unifor margin__bottom--default">
 			<div className="fundoSaudacao" style={{ background: gradient }}>
 				<img
 					src={ImagemInicial}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Card com Altura Dinâmica e Badge Centralizado Inferior</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: sans-serif;
+				margin: 2rem;
+				background: #f0f0f0;
+				display: flex;
+				justify-content: center;
+			}
+
+			.saudacao_container {
+				position: relative;
+				width: 100%;
+			}
+
+			.saudacao_contet--infos {
+				padding: 2rem 1.5rem;
+				position: relative;
+				/* padding: var(--space-100); */
+				border-radius: var(--radius-075);
+			}
+
+			.saudacao_contet--infos-plus {
+				position: absolute;
+				bottom: -14px;
+				left: 50%;
+				transform: translateX(-50%);
+				padding: 0.6rem 1.2rem;
+				white-space: nowrap;
+
+				display: flex;
+				height: 2.625rem;
+				/* padding: var(--space-025) var(--space-100); */
+				align-items: center;
+				gap: var(--space-100);
+				border-radius: var(--radius-075);
+				max-width: 16.81rem;
+				color: #fff;
+			}
+
+			@media (max-width: 500px) {
+				.saudacao_contet--infos {
+					padding: 1.5rem 1rem;
+				}
+
+				.saudacao_contet--infos-plus {
+					font-size: 0.8rem;
+					padding: 0.5rem 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="saudacao_container">
+			<div class="saudacao_contet--infos">
+				<p>
+					Este é um texto de exemplo. Ele pode ser curto... Lorem ipsum dolor,
+					sit amet consectetur adipisicing elit. Alias culpa tempora facere
+					laborum. Temporibus, quaerat corrupti nesciunt velit culpa hic,
+					ducimus reprehenderit commodi magnam ea dolorum ab cum maiores
+					quidem?</p
+				>
+				<!-- Experimente adicionar mais parágrafos aqui para testar -->
+				<div class="saudacao_contet--infos-plus">2 anos</div>
+			</div>
+		</div>
+	</body>
+</html>
