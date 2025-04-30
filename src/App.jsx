@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 // import { isMobile } from "react-device-detect";
 import Home from "./Home";
 import Home2 from "./Home2";
@@ -17,6 +17,12 @@ import Marketing from "./Pages/Marketing";
 import Artificial from "./Pages/Artificial";
 
 const App = () => {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<Routes>
 			{/* <Route path="/" element={isMobile ? <Home /> : <Home2 />} /> */}

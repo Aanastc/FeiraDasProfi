@@ -156,12 +156,11 @@ button svg path {
 }
 
 .depoimento {
-  flex: 0 0 300px;
+  flex: 0 0 17rem;
   scroll-snap-align: start;
   display: flex;
-  width: 18.75rem;
-  height: 20rem;
-  min-height: 18.75rem;
+  width: 17rem;
+  height: 22rem;
   padding: var(--space-075);
   align-items: flex-start;
   gap: var(--space-050);
@@ -169,11 +168,17 @@ button svg path {
   background: #FFF;
 }
 
+.depoimento_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-025);
+}
+
 .foto_depoimento {
-  width: 64px;
-  height: 64px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  margin-right: 16px;
   object-fit: cover;
 }
 

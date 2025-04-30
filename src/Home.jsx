@@ -21,32 +21,32 @@ export default function Cursos() {
 			nome: "Administração",
 		},
 		{
-			rota: "/Comercial",
-			nome: "Gestão Comercial",
-		},
-		{
 			rota: "/Contabeis",
 			nome: "Ciências Contábeis",
 		},
 		{
-			rota: "/Logistica",
-			nome: "Logística",
+			rota: "/Comercial",
+			nome: "Gestão Comercial",
 		},
 		{
 			rota: "/Financeira",
 			nome: "Gestão Financeira",
 		},
 		{
-			rota: "/Marketing",
-			nome: "Marketing Digital",
+			rota: "/Rh",
+			nome: "Gestão de RH",
 		},
 		{
 			rota: "/Negocios",
 			nome: "Inteligência de Negócios",
 		},
 		{
-			rota: "/Rh",
-			nome: "Gestão de RH",
+			rota: "/Logistica",
+			nome: "Logística",
+		},
+		{
+			rota: "/Marketing",
+			nome: "Marketing Digital",
 		},
 	];
 

@@ -95,11 +95,11 @@ const Depoimentos = ({ backgroundEscuro }) => {
 								className="foto_depoimento"
 							/>
 							<div className="conteudo">
-								<div>
+								<div className="depoimento_content">
 									<p className="paragraph margin-0">
 										<b>{depoimento.nome}</b>
 									</p>
-									<p className="papel text-neutral-600">{depoimento.papel}</p>
+									<p className="legend text-neutral-600 ">{depoimento.papel}</p>
 									<p className="depoimento_text">“{depoimento.texto}”</p>
 								</div>
 								<div className="estrelas">

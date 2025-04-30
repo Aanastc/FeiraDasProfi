@@ -19,40 +19,40 @@ export default function SaibaMais({ cursoSiteUnifor }) {
 			nome: "Administração",
 		},
 		{
-			rota: "/Comercial",
-			nome: "Gestão Comercial",
+			rota: "/Ads",
+			nome: "Análise e Desenvolvimento de Sistemas",
 		},
 		{
 			rota: "/Contabeis",
 			nome: "Ciências Contábeis",
 		},
 		{
-			rota: "/Logistica",
-			nome: "Logística",
+			rota: "/Comercial",
+			nome: "Gestão Comercial",
 		},
 		{
 			rota: "/Financeira",
 			nome: "Gestão Financeira",
 		},
 		{
-			rota: "/Marketing",
-			nome: "Marketing Digital",
+			rota: "/Rh",
+			nome: "Gestão de RH",
+		},
+		{
+			rota: "/Artificial",
+			nome: "Inteligência Artificial",
 		},
 		{
 			rota: "/Negocios",
 			nome: "Inteligência de Negócios",
 		},
 		{
-			rota: "/Rh",
-			nome: "Gestão de RH",
+			rota: "/Logistica",
+			nome: "Logística",
 		},
 		{
-			rota: "/Ads",
-			nome: "Análise e Desenvolvimento de Sistemas",
-		},
-		{
-			rota: "/Artificial",
-			nome: "Inteligência Artificial",
+			rota: "/Marketing",
+			nome: "Marketing Digital",
 		},
 	];
 
