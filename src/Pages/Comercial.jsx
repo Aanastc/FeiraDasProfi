@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/Contabilidade/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Contabilidade/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/Contabilidade/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/Contabilidade/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Comercial() {
 	const [gradient, setGradient] = useState(
@@ -66,8 +67,9 @@ export default function Comercial() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/gestao-comercial" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

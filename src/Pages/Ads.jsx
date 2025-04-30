@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/ADS/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/ADS/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/ADS/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/ADS/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Ads() {
 	const [gradient, setGradient] = useState(
@@ -63,8 +64,9 @@ export default function Ads() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/analise-e-desenvolvimento-de-sistemas" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

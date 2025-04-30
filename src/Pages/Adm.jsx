@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/Adminitracao/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Adminitracao/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/Adminitracao/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/Adminitracao/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Adm() {
 	const [gradient, setGradient] = useState(
@@ -71,6 +72,7 @@ export default function Adm() {
 			/>
 			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/administracao" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }
