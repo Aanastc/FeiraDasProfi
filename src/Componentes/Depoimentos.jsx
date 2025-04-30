@@ -100,7 +100,7 @@ const Depoimentos = ({ backgroundEscuro }) => {
 										<b>{depoimento.nome}</b>
 									</p>
 									<p className="legend text-neutral-600 ">{depoimento.papel}</p>
-									<p className="depoimento_text">“{depoimento.texto}”</p>
+									<p className="depoimento_text">{depoimento.texto}</p>
 								</div>
 								<div className="estrelas">
 									<img src={Star} alt="estrelas" />
