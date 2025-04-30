@@ -11,6 +11,7 @@ export default function Unifor({ Recursos, Encontros, Avaliacoes, Vantagens }) {
 				</p>
 				<img
 					src={Recursos}
+					className="image-fluid"
 					alt="Webaulas interativas, Material de leitura, Videoaulas e lives, Exercícios de fixação e Material complementar"
 				/>
 				<p className="paragraph">
@@ -18,6 +19,7 @@ export default function Unifor({ Recursos, Encontros, Avaliacoes, Vantagens }) {
 				</p>
 				<img
 					src={Encontros}
+					className="image-fluid"
 					alt="3 encontros virtuais: Aulas ao vivo semanais ou aos sábados e 2 encontros presenciais: Encontro Acadêmico e Avaliação presencial"
 				/>
 				<p className="paragraph">
@@ -25,6 +27,7 @@ export default function Unifor({ Recursos, Encontros, Avaliacoes, Vantagens }) {
 				</p>
 				<img
 					src={Avaliacoes}
+					className="image-fluid"
 					alt="60% Avaliações finais e 40% Avaliações processuais"
 				/>
 				<p className="legend">
@@ -34,7 +37,11 @@ export default function Unifor({ Recursos, Encontros, Avaliacoes, Vantagens }) {
 					ocorrem no Campus da Unifor.
 				</p>
 				<h4 className="heading4">Por que nos escolher?</h4>
-				<img src={Vantagens} alt="" className="margin__bottom--default" />
+				<img
+					src={Vantagens}
+					alt=""
+					className="images_especificas margin__bottom--default image-fluid"
+				/>
 			</div>
 		</div>
 	);

@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Negocios/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Negocios/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Negocios/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Negocios/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Negocios/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Negocios/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Negocios() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Domine análise de Big Data, interpretação de dados e modelos preditivos. Esteja apto a analisar dados complexos, comunicar resultados e liderar com visão sistêmica, empreendedora e ética."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="O curso de Inteligência de Negócios da EaD Unifor prepara você para se destacar em um mercado cada vez mais orientado por dados. Aprenda a analisar Big Data, interpretar informações complexas, construir modelos preditivos e comunicar resultados com clareza. Desenvolva uma visão sistêmica, empreendedora e ética para liderar com inteligência."

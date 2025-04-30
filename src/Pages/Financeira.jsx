@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Financeira/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Financeira/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Financeira/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Financeira/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Financeira/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Financeira/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Financeira() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Desenvolva habilidades para solucionar desafios, como gestão de caixa, liquidez, endividamento e rentabilidade, aprendendo técnicas modernas para avaliação de investimentos empresariais."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="No curso EaD de Gestão Financeira da Unifor, você desenvolve habilidades para enfrentar os desafios da área: gestão de caixa, liquidez, endividamento e rentabilidade. Aprenda a aplicar técnicas modernas para avaliar investimentos e tomar decisões financeiras com segurança."

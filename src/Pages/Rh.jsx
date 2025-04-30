@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/RH/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/RH/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/RH/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/RH/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/RH/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/RH/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Rh() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Desenvolva competências técnico-científicas e socioemocionais, aptidões para gerenciar talentos e promover ambientes saudáveis em um mercado em constante transformação tecnológica."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="No curso EaD de Gestão de RH da Unifor, você desenvolve competências técnico-científicas e socioemocionais para gerenciar pessoas, potencializar talentos e promover ambientes organizacionais saudáveis em tempos de transformação digital."

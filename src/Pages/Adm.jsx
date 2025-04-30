@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Adminitracao/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Adminitracao/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Adminitracao/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Adminitracao/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Adminitracao/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Adminitracao/imagem-encontros.png";
@@ -57,7 +57,7 @@ export default function Adm() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Desenvolva habilidades empreendedoras, resolva desafios sociais e tome decisões assertivas com suporte de inteligência humana e artificial."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="4 anos"
 				Prova={Prova}
 				conceito2="O curso EaD de Administração da Unifor alia prática de mercado à formação empreendedora. Você será capaz de resolver desafios sociais, liderar projetos e tomar decisões com base em inteligência de dados, contribuindo para o crescimento de empresas e instituições."
@@ -69,7 +69,7 @@ export default function Adm() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/administracao" />
 		</div>
 	);

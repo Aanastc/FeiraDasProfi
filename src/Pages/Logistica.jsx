@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Logistica/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Logistica/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Logistica/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Logistica/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Logistica/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Logistica/imagem-encontros.png";
@@ -54,7 +54,7 @@ export default function Logistica() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Aprenda uma gama variada de habilidades práticas e teóricas essenciais para gerenciar eficientemente o fluxo de produtos e informações ao longo da cadeia de suprimentos."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="Você sabia que a área de Logística está entre as mais estratégicas e promissoras do mercado? Com o curso de Logística da EaD Unifor, você desenvolve as competências necessárias para atuar com excelência na gestão de cadeias de suprimentos, transporte, operações e armazenagem."

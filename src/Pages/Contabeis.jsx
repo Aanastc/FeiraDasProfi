@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Contabilidade/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Contabilidade/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Contabilidade/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Contabilidade/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Contabilidade/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Contabilidade/imagem-encontros.png";
@@ -57,7 +57,7 @@ export default function Contabeis() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Desenvolva competências essenciais, promovendo zelo e pensamento crítico. Capacite-se para orientar gestores, priorizar o controle e garantir a eficácia organizacional, valorizando conformidade legal."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="4 anos"
 				Prova={Prova}
 				conceito2="Com o curso de Ciências Contábeis da EaD Unifor, você desenvolve competências para atuar com precisão e visão estratégica nas áreas financeira, contábil e gerencial. Prepare-se para interpretar dados, apoiar decisões empresariais e contribuir para o crescimento de organizações públicas e privadas."

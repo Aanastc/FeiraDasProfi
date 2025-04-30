@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Artificial/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Artificial/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Artificial/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Artificial/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Artificial/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Artificial/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Artificial() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="A melhor formação em Inteligência Artificial (IA), com o objetivo de desenvolver sistemas a partir da resolução de problemas de natureza complexa, melhorando a qualidade de vida da sociedade."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2,5 anos"
 				Prova={Prova}
 				conceito2="Com o curso EaD de Inteligência Artificial da Unifor, você aprende a desenvolver sistemas inteligentes voltados à solução de problemas complexos. Construa produtos inovadores que otimizam tarefas e promovem mais qualidade de vida para indivíduos e sociedade."

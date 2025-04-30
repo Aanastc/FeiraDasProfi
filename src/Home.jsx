@@ -134,8 +134,8 @@ export default function Cursos() {
 						</svg>
 					</button>
 				))}
-				<Final backgroundEscuro={backgroundEscuro} />
 			</div>
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

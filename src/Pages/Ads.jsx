@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/ADS/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/ADS/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/ADS/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/ADS/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/ADS/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/ADS/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Ads() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Aplique conhecimentos em métodos e técnicas inovadores na construção de soluções em software e planeje seu desenvolvimento com consciência social, ética e ambiental."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="No curso EaD de Análise e Desenvolvimento de Sistemas da Unifor, você aprende a planejar, desenvolver e manter sistemas de software com foco em inovação, responsabilidade social e sustentabilidade. Ideal para quem deseja atuar com tecnologia de forma prática e criativa."

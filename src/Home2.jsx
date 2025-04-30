@@ -1,5 +1,5 @@
-import qrCode from "../src/assets/qrCode.jpg";
-import Logo from "../src/assets/CapasHome/LogoAzulMarinho.png";
+import qrCode from "../src/assets/Versao 25.1/Home Desktop/qrCode.jpg";
+import Logo from "../src/assets/Versao 25.1/Home Desktop/LogoAzulMarinho.png";
 import "./Home2.css";
 
 export default function Home2() {

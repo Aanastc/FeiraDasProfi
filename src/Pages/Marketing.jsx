@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Marketing/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Marketing/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Marketing/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Marketing/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Marketing/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Marketing/imagem-encontros.png";
@@ -51,7 +51,7 @@ export default function Marketing() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Especialize-se em inovação, desenvolvendo e executando planos estratégicos. Esteja apto a assessorar empresas, criar conteúdos eficientes e liderar no cenário do marketing moderno."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="Com o curso de Marketing Digital da EaD Unifor, você se prepara para atuar com excelência em um dos setores mais dinâmicos da atualidade. Aprenda a desenvolver e executar planos estratégicos, assessorar empresas, criar conteúdos relevantes e liderar projetos com foco em resultados."

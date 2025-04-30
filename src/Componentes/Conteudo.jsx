@@ -4,7 +4,7 @@ export default function Conteudo({
 	backgroundEscuro,
 	conceito,
 	tempo,
-	Ampuleta,
+	Ampulheta,
 	Prova,
 	backgroundClaro,
 	conceito2,
@@ -22,7 +22,7 @@ export default function Conteudo({
 					className="saudacao_contet--infos-plus"
 					style={{ background: backgroundEscuro }}>
 					<div className="flexbox__center">
-						<img src={Ampuleta} alt="" className="saudacaoIcone" />
+						<img src={Ampulheta} alt="" className="saudacaoIcone" />
 						<p className="tags">{tempo}</p>
 					</div>
 					<div className="flexbox__center">

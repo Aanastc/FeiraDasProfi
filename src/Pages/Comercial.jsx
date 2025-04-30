@@ -7,7 +7,7 @@ import SaibaMais from "../Componentes/SaibaMais.jsx";
 
 // Especifico
 import ImagemSaudacao from "../assets/Versao 25.1/Contabilidade/header-image.png";
-import Ampuleta from "../assets/Versao 25.1/Contabilidade/icone-ampuleta.png";
+import Ampulheta from "../assets/Versao 25.1/Contabilidade/icone-ampulheta.png";
 import Prova from "../assets/Versao 25.1/Contabilidade/icone-prova.png";
 import Recursos from "../assets/Versao 25.1/Contabilidade/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Contabilidade/imagem-encontros.png";
@@ -54,7 +54,7 @@ export default function Comercial() {
 				backgroundClaro={backgroundClaro}
 				backgroundEscuro={backgroundEscuro}
 				conceito="Torne-se um profissional especializado em estratégias de vendas, gestão de clientes e marketing, contribuindo para a competitividade das organizações. Desenvolva uma visão estratégica, analítica e inovadora."
-				Ampuleta={Ampuleta}
+				Ampulheta={Ampulheta}
 				tempo="2 anos"
 				Prova={Prova}
 				conceito2="O curso EaD de Gestão Comercial da Unifor prepara você para atuar com estratégias de vendas, gestão de clientes e marketing. Aprimore sua visão de mercado e contribua para o crescimento e competitividade de diferentes organizações."
