@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  max-width: 26.563rem;
+  /* max-width: 26.563rem; */
 }
 
 .home_mobile--image {
@@ -205,6 +205,36 @@ button svg path {
 .logo_final {
   width: 8.4375rem;
   height: 1.8125rem;
+}
+
+/* Home 2 */
+.containerHome2 {
+  margin: auto;
+  margin-top: 10%;
+  max-width: 31.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebedf3c9;
+  border-radius: 0.75rem;
+  padding: 2.5rem 2.3125rem;
+  gap: 24px;
+}
+
+.qr-code {
+  width: 25.625rem;
+  border-radius: 0.75rem;
+}
+
+.Logo_Home2 {
+  width: 14.9375rem;
+}
+
+.scan-text {
+  color: #132190;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 /* coisas que vão estar no ds */
