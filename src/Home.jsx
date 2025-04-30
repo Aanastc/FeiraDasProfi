@@ -74,7 +74,7 @@ export default function Cursos() {
 					aprendizagem.
 				</p>
 				<h4 className="heading4 text--Anil">
-					Conheça os cursos a distância oferecidos pela EaD Unifor
+					Conheça os cursos oferecidos pela EaD Unifor
 				</h4>
 				<p className="paragraph flexbox__center--center">
 					<b> Cursos de Comunicação e Gestão</b>

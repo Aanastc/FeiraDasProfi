@@ -42,7 +42,7 @@ export default function Negocios() {
 			<Saudacao
 				ImagemInicial={ImagemSaudacao}
 				TextoInicio="Destaque-se no mundo com nosso curso de "
-				curso="Inteligência de Negocios "
+				curso="Inteligência de Negócios "
 				textoFim="em EaD."
 				gradient={gradient}
 				backgroundClaro={backgroundClaro}
