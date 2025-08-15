@@ -1,20 +1,19 @@
 import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 // import { isMobile } from "react-device-detect";
 import Home from "./Home";
-import Home2 from "./Home2";
 
 // cursos:
 import Adm from "./Pages/Adm";
 import Ads from "./Pages/Ads";
-import Contabeis from "./Pages/Contabeis";
+import Artificial from "./Pages/Artificial";
 import Comercial from "./Pages/Comercial";
+import Contabeis from "./Pages/Contabeis";
 import Financeira from "./Pages/Financeira";
-import Rh from "./Pages/Rh";
-import Negocios from "./Pages/Negocios";
 import Logistica from "./Pages/Logistica";
 import Marketing from "./Pages/Marketing";
-import Artificial from "./Pages/Artificial";
+import Negocios from "./Pages/Negocios";
+import Rh from "./Pages/Rh";
 
 const App = () => {
 	return (

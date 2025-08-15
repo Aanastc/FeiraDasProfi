@@ -1,31 +1,27 @@
-# Create React App
+# Folders dos Cursos - EAD UNIFOR
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+**Folders dos Cursos** é um projeto desenvolvido para organizar e apresentar os cursos EAD da Universidade de Fortaleza (Unifor) de maneira intuitiva e visualmente atraente. O projeto combina **React** para a estrutura dinâmica da interface e **CSS** para um design limpo e responsivo, sendo hospedado na **Vercel** para acesso online rápido e confiável.
 
-## Deploy Your Own
+---
 
-Deploy your own Create React App project with Vercel.
+## 🚀 Tecnologias Utilizadas
+- **React** – Biblioteca JavaScript para construção de interfaces interativas.
+- **CSS** – Estilização personalizada para layout e responsividade.
+- **Vercel** – Deploy contínuo e hospedagem do projeto.
+- **JavaScript** – Lógica de interação com os elementos da interface.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+---
 
-_Live Example: https://create-react-template.vercel.app/_
+## ✨ Funcionalidades
+- Visualização organizada dos folders dos cursos EAD.
+- Navegação simples e amigável, com destaque para cada curso.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔗 Acesso ao Projeto
+- **Código fonte:** [GitHub](https://github.com/Aanastc/FeiraDasProfi.git)  
+- **Demonstração online:** [Feira das Profi](https://feira-das-profi.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+💻 Desenvolvido por **Ana Letícia Alves Claudiano**
