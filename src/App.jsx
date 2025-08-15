@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-// import { isMobile } from "react-device-detect";
-=======
 import React, { useEffect } from "react";
 import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { isMobile } from "react-device-detect";
->>>>>>> 02234f99bfec5c525742ddc6a8e2af52ea0aacee
 import Home from "./Home";
+import Home2 from "./Home2";
 
 // cursos:
 import Adm from "./Pages/Adm";
@@ -31,7 +26,7 @@ const App = () => {
 	return (
 		<Routes>
 			<Route path="/" element={isMobile ? <Home /> : <Home2 />} />
-			{/* <Route path="/" element={<Home />} /> */}
+			<Route path="/" element={<Home />} />
 			<Route path="Ads" element={<Ads />} />
 			<Route path="Rh" element={<Rh />} />
 			<Route path="Adm" element={<Adm />} />
