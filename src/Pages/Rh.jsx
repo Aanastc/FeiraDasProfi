@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/RH/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/RH/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/RH/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/RH/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Rh() {
 	const [gradient, setGradient] = useState(
@@ -63,8 +64,9 @@ export default function Rh() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/gestao-rh" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

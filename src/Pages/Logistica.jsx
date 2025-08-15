@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/Logistica/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Logistica/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/Logistica/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/Logistica/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Logistica() {
 	const [gradient, setGradient] = useState(
@@ -66,8 +67,9 @@ export default function Logistica() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/logistica" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

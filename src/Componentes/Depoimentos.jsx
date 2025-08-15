@@ -1,4 +1,5 @@
 import React from "react";
+import Star from "../assets/Depoimento/star.svg";
 
 import Hansmuller from "../assets/Depoimento/Hansmuller.png";
 import Vitor from "../assets/Depoimento/Vitor.png";
@@ -76,27 +77,38 @@ const depoimentosData = [
 	},
 ];
 
-const Depoimentos = () => {
+const Depoimentos = ({ backgroundEscuro }) => {
 	return (
-		<div className="slider-container container-xs">
-			<div className="slider">
-				{depoimentosData.map((depoimento, index) => (
-					<div key={index} className="card-assessment">
-						<img
-							src={depoimento.imageSrc}
-							alt={depoimento.nome}
-							className="foto"
-						/>
-						<div className="conteudo">
-							<p className="paragraph">
-								<b>{depoimento.nome}</b>
-							</p>
-							<p className="papel">{depoimento.papel}</p>
-							<p className="legend">“{depoimento.texto}”</p>
-							<div className="estrelas">★★★★★</div>
+		<div
+			className="Unifor fundo_depoimento margin__bottom--default"
+			style={{ background: backgroundEscuro }}>
+			<h4 className="heading4 depoimento_heading">
+				O que as pessoas estão dizendo
+			</h4>
+			<div className="slider-container ">
+				<div className="slider">
+					{depoimentosData.map((depoimento, index) => (
+						<div key={index} className="depoimento">
+							<img
+								src={depoimento.imageSrc}
+								alt={depoimento.nome}
+								className="foto_depoimento"
+							/>
+							<div className="conteudo">
+								<div className="depoimento_content">
+									<p className="paragraph margin-0">
+										<b>{depoimento.nome}</b>
+									</p>
+									<p className="legend text-neutral-600 ">{depoimento.papel}</p>
+									<p className="depoimento_text">{depoimento.texto}</p>
+								</div>
+								<div className="estrelas">
+									<img src={Star} alt="estrelas" />
+								</div>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
 		</div>
 	);

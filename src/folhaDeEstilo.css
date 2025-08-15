@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  max-width: 26.563rem;
+  /* max-width: 26.563rem; */
 }
 
 .home_mobile--image {
@@ -16,7 +16,7 @@ body {
 .button-media-link {
   all: unset;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   border: var(--button-border) 1px solid !important;
 }
 
@@ -67,6 +67,7 @@ button svg path {
 .saudacao_contet--infos {
   position: relative;
   padding: var(--space-100);
+  padding-bottom: 32px;
   border-radius: var(--radius-075);
 }
 
@@ -87,6 +88,7 @@ button svg path {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /* @media (max-width: 500px) {
   .saudacao_contet--infos {
     padding: 1.5rem 1rem;
@@ -97,6 +99,8 @@ button svg path {
   }
 } */
 
+=======
+>>>>>>> 02234f99bfec5c525742ddc6a8e2af52ea0aacee
 .tag_secundary {
   display: flex;
   width: fit-content;
@@ -134,6 +138,17 @@ button svg path {
 }
 
 /* Depoimento */
+.fundo_depoimento {
+  border-radius: var(--radius-100) 0 0 0;
+  padding: var(--space-150, 1.5rem) 1.125rem;
+}
+
+.depoimento_heading {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .slider-container {
   overflow-x: auto;
   padding: 16px;
@@ -154,51 +169,85 @@ button svg path {
   -webkit-overflow-scrolling: touch;
 }
 
-.card-assessment {
-  flex: 0 0 300px;
-  background: white;
-  border: 1px solid #3b82f6;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
+.depoimento {
+  flex: 0 0 17rem;
   scroll-snap-align: start;
+  display: flex;
+  width: 17rem;
+  height: 22rem;
+  padding: var(--space-075);
+  align-items: flex-start;
+  gap: var(--space-050);
+  border-radius: var(--radius-075);
+  background: #FFF;
 }
 
-.foto {
-  width: 64px;
-  height: 64px;
+.depoimento_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-025);
+}
+
+.foto_depoimento {
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  margin-right: 16px;
   object-fit: cover;
 }
 
 .conteudo {
-  flex: 1;
-}
-
-.nome {
-  font-weight: bold;
-  font-size: 1.125rem;
-  color: #1f2937;
-  margin-bottom: 4px;
-}
-
-.papel {
-  color: #3b82f6;
-  font-size: 0.875rem;
-  margin-bottom: 8px;
-}
-
-.texto {
-  color: #374151;
-  font-size: 0.9rem;
-  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .estrelas {
-  color: #fbbf24;
-  font-size: 1.25rem;
+  display: flex;
+  text-align: end;
+}
+
+.depoimento_text {
+  color: var(--color-neutral-950);
+  font-size: 0.875rem;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.logo_final {
+  width: 8.4375rem;
+  height: 1.8125rem;
+}
+
+/* Home 2 */
+.containerHome2 {
+  margin: auto;
+  margin-top: 10%;
+  max-width: 31.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebedf3c9;
+  border-radius: 0.75rem;
+  padding: 2.5rem 2.3125rem;
+  gap: 24px;
+}
+
+.qr-code {
+  width: 25.625rem;
+  border-radius: 0.75rem;
+}
+
+.Logo_Home2 {
+  width: 14.9375rem;
+}
+
+.scan-text {
+  color: #132190;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 /* coisas que vão estar no ds */

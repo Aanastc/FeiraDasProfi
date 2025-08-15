@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/Negocios/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Negocios/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/Negocios/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/Negocios/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Negocios() {
 	const [gradient, setGradient] = useState(
@@ -41,7 +42,7 @@ export default function Negocios() {
 			<Saudacao
 				ImagemInicial={ImagemSaudacao}
 				TextoInicio="Destaque-se no mundo com nosso curso de "
-				curso="Inteligência de Negocios "
+				curso="Inteligência de Negócios "
 				textoFim="em EaD."
 				gradient={gradient}
 				backgroundClaro={backgroundClaro}
@@ -63,8 +64,9 @@ export default function Negocios() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/inteligencia-de-negocios" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }

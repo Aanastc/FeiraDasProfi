@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 // import { isMobile } from "react-device-detect";
+=======
+import React, { useEffect } from "react";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
+import { isMobile } from "react-device-detect";
+>>>>>>> 02234f99bfec5c525742ddc6a8e2af52ea0aacee
 import Home from "./Home";
 
 // cursos:
@@ -16,10 +22,16 @@ import Negocios from "./Pages/Negocios";
 import Rh from "./Pages/Rh";
 
 const App = () => {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<Routes>
-			{/* <Route path="/" element={isMobile ? <Home /> : <Home2 />} /> */}
-			<Route path="/" element={<Home />} />
+			<Route path="/" element={isMobile ? <Home /> : <Home2 />} />
+			{/* <Route path="/" element={<Home />} /> */}
 			<Route path="Ads" element={<Ads />} />
 			<Route path="Rh" element={<Rh />} />
 			<Route path="Adm" element={<Adm />} />

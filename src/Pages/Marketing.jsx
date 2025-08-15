@@ -13,6 +13,7 @@ import Recursos from "../assets/Versao 25.1/Marketing/imagem-recursos.png";
 import Encontros from "../assets/Versao 25.1/Marketing/imagem-encontros.png";
 import Avaliacoes from "../assets/Versao 25.1/Marketing/imagem-avaliacoes.png";
 import Vantagens from "../assets/Versao 25.1/Marketing/imagem-vantagens.png";
+import Final from "../Componentes/Final.jsx";
 
 export default function Marketing() {
 	const [gradient, setGradient] = useState(
@@ -63,8 +64,9 @@ export default function Marketing() {
 				Avaliacoes={Avaliacoes}
 				Vantagens={Vantagens}
 			/>
-			{/* <Depoimentos backgroundEscuro={backgroundEscuro} /> */}
+			<Depoimentos backgroundEscuro={backgroundEscuro} />
 			<SaibaMais cursoSiteUnifor="https://www.unifor.br/web/graduacao/ead/marketing-digital" />
+			<Final backgroundEscuro={backgroundEscuro} />
 		</div>
 	);
 }
